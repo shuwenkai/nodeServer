@@ -1,0 +1,136 @@
+/*================–¬∆∑================*/
+/*±≥æ∞Õº*/
+.xinpin_tu{
+    background-image: url("../img/fa1701.jpg");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    position: relative;
+    transition-duration:1s;
+}
+/*æ≤Ã¨Œƒ◊÷…Ë÷√*/
+.da_wz{
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: serif  ;
+    position: absolute;
+    left: 420px;
+    top: 110px;
+}
+.xiao_wz{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: serif  ;
+    position: absolute;
+    left: 510px;
+    top: 230px;
+}
+
+
+
+
+
+
+/*∞¥≈•*/
+.an_jiaju{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_shafa{
+    color: white;
+    text-decoration:none;
+    font-size:18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_fangzhi{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_dengju{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_shipin{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_ditan{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*±≥æ∞“∆»Î*/
+.an_bk{
+    position: absolute;
+    left: 520px;
+    top: 280px;
+    width: 8em;
+    height: 250px;
+    /*border: solid 2px blue;*/
+}
+.an_bk>a{
+
+    text-align: center;
+    /*border: solid 2px red;*/
+
+}
+.an_bk>a:hover{
+    background-color: white;
+}
+
+.an_bj{
+    margin: 6px;
+}
+
+
+
+
+/*∞¥≈•“∆»Î*/
+.an_jiaju:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1701.jpg");*/
+}
+.an_shafa:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1702.jpg");*/
+}
+.an_fangzhi:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1703.jpg");*/
+}
+.an_dengju:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1704.jpg");*/
+}
+.an_shipin:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1705.jpg");*/
+}
+.an_ditan:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1706.jpg");*/
+}

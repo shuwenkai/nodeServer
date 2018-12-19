@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/backtop.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+
+
+<div class="container process">
+    <div class="row">
+        <span class="titleNow">1.我的购物车>></span>
+        <span class="titleNow">2.确定订单信息>></span>
+        <span class="titleNow red">3.选择支付方式>></span>
+        <span class="titleNow">4.完成</span>
+    </div>
+    <div id="allmoney">
+        <h3>产品数量总计: <span>1</span> 件 应付合计:<span>￥2980.00</span> 元</h3>
+    </div>
+    <div id="payfs">
+        <h3>支付方式</h3>
+        <hr>
+        <div class="bank">
+            <h4>支付宝<small>（支持分期，支持所有银行借记卡、信用卡的大额支付，无需开通网银）</small></h4>
+            <label class="radio-inline">
+                <input type="radio" name="zffs" id="inlineRadio1" value="option1">
+            </label>
+            <img src="../img/shop_img/zfb.png">
+            <span>支付宝支付</span>
+        </div>
+        <div class="bank">
+            <h4>微信<small>（支持分期，支持所有银行借记卡、信用卡的大额支付，无需开通网银）</small></h4>
+            <label class="radio-inline">
+                <input type="radio" name="zffs" id="inlineRadio1" value="option1">
+            </label>
+            <img src="../img/shop_img/weixin.png">
+            <span>微信支付</span>
+        </div>
+    </div>
+    <div id="TIPS">
+        <h4>TIPS 温馨提示:</h4>
+        <p>1. 提交订单后，请务必保持手机畅通，我们的客服会与您再次确认订单。<br>
+        2. 请您在下单后尽快至银行进行汇款，货款到达 Tao 账户前，无法为您保留选购商品的库存。<br>
+        3. 请同时填写汇款金额、汇款人相关信息，并在附言栏注明订单号。<br>
+        4. 汇款后请及时通知客服人员，以便尽快给您核实款项。<br>
+            5. 到款时间一般为自办理汇款手续之日起1-3个工作日，您订购的商品会在汇款到达 Tao 账户后安排发货。</p>
+    </div>
+    <p class="phone">请您尽快完成支付（如需保留订单请拨打客服电话400-888-9469）</p>
+    <a href="buyCarComplete.html"><div class="olotijiao true">确认并支付</div></a>
+    <div id="huidaogouwuche" class="olotijiao false">返回</div>
+</div>
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/payment.js"></script>
+
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+
+    $("#huidaogouwuche").click(function () {
+        location.href="myBuyCar.html"
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.line{
+    position: absolute;
+    height: 1830px;
+    border-left: 2px solid #EAEAEA;
+    border-right: 2px solid white;
+    left: 30%;
+    top: 0;
+}
+body{
+    background-color: #F6F6F6;
+    font-size: 9pt;
+}
+span{
+    letter-spacing: 1px;
+
+}
+#space{
+    position: relative;
+    letter-spacing: 2px;
+    width: 200px;
+    left: 10%;
+
+
+}
+.bui{
+    height: 450px;
+}
+#body-position{
+    position: relative;
+}
+#hot{
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    background-color: white;
+    width:90%;
+    height:120px;
+
+}
+#hot a{
+    text-decoration: none;
+    color: #8d7f76;
+}
+#hot a:hover{
+    cursor: pointer;
+}
+.pull dd{
+    visibility: hidden;
+}
+.huiyuan:hover{
+    cursor: pointer;
+}
+.huiyuan{
+    width:200px;
+
+}
+.li{
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+
+}
+#hot dd{
+    line-height: 24px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+dd:nth-child(3){
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+dd:nth-child(5){
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+dd:nth-child(2){
+    position: absolute;
+    left:2%;
+    top: 40%;
+}
+dd:nth-child(4){
+    position: absolute;
+    left:2%;
+    top: 70%;
+}
+
+
+#introduce{
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    top: 300px;
+    line-height: 25px;
+}
+.color{
+    color: #8d7f76;
+}
+h2{
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/bg_main.jpg");
+    font-family: "Microsoft YaHei UI";
+}
+
+hr{
+    border: rgba(0, 0, 0, 0.51) 1px solid;
+}
+
+/*当前状态*/
+.process{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/*台灯*/
+.td-lamp{
+    height: 646px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-top: 150px;
+}
+.td-lamp img{
+    width: 1227px;
+    height: 646px;
+}
+.black-ban{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.black-ban h4{
+    color: #c9c3ba;
+    line-height: 30px;
+}
+
+/*落地灯*/
+.ld-lamp{
+    margin-top: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ld-lamp img{
+    width: 685px;
+    height: 553px;
+    float: left;
+    display: inline-block;
+}
+.ld-lamp div{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 150px;
+}
+.ld-lamp div p{
+    font-size: 75px;
+    font-weight: lighter;
+    line-height: 75px;
+}
+.ld-lamp div span{
+    color: #999188;
+    font-size: 20px;
+}
+
+/*壁灯*/
+.bd-lamp{
+    margin-top: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bd-lamp img{
+    width: 685px;
+    height: 553px;
+    float: right;
+    display: inline-block;
+}
+.bd-lamp div{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 150px;
+}
+.bd-lamp div p{
+    font-size: 75px;
+    font-weight: lighter;
+    line-height: 75px;
+}
+.bd-lamp div span{
+    color: #999188;
+    font-size: 20px;
+}
+
+/*吊灯*/
+.dd-lamp{
+    margin-top: 150px;
+    height: 646px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.dd-lamp img{
+    width: 1227px;
+    height: 646px;
+}

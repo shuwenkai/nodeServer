@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/balanceLife.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<%-include('nav')%>
+<div class="container" id="life_container">
+<section id="life_sec">
+    <div id="life_catalogue">
+        <ul id="life_catalogueul">
+            <li><a class="selection_a" id="selection_a" onclick="life_check(this)">食养</a></li>
+            <li><a class="selection_a" id="selection_b" onclick="life_check(this)">家集</a></li>
+        </ul>
+    </div>
+    <div id="life_content">
+        <!--<div>-->
+            <!--<a><img src="/img/selection/selection1.png" ></a>-->
+            <!--<p>是设计也是内涵，是沙发也是风景</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<a><img src="/img/selection/selection1.png" ></a>-->
+            <!--<p>是设计也是内涵，是沙发也是风景</p>-->
+        <!--</div>-->
+    </div>
+</section>
+</div>
+<%-include('backtop')%>
+<%-include('footer')%>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/balanceLife.js"></script>
+</body>
+</html>

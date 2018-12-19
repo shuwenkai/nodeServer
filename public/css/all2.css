@@ -1,0 +1,70 @@
+body{
+    background-color:  #F6F6F6 ;
+    position: relative;
+}
+.color>a{
+    text-decoration: none;
+    color: #8d7f76;
+}
+li{
+    list-style: none;
+}
+.color>h1{
+    font-size: 13px;
+    color: black;
+}
+.allW>h1{
+    font-size: 13px;
+    color: black;
+}
+.hotDiv{
+    height: 100px;
+    background-color: white;
+}
+.allW{
+    top: 100px;
+
+    width: 680px;
+    color:#8d7f76 ;
+    font-size: 9pt;
+    letter-spacing: 1px;
+    left: 35%;
+    position: absolute;
+    line-height: 20px;
+}
+.color{
+    top: 100px;
+    font-size: 9pt;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color:  #5b5652;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+}
+.color>a:hover{
+    color: #ceaa78;
+    cursor: pointer;
+}
+.allW>h2{
+    font-size: 13px;
+}
+.line{
+    top: 100px;
+    position: absolute;
+height: 947px;
+border-right: 2px solid #eaeaea;
+border-left: 2px solid #fff;
+left: 400px;
+}
+.leftDiv{
+    position: absolute;
+    left: 500px;
+}
+.color>a{
+    line-height: 30px;
+}
+.allDiv{
+    position: absolute;
+    top: 10%;
+}

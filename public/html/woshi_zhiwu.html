@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en" class="bod1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/fangzhicss.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+<div class="container">
+    <nav id="index_nav">
+        <a><img src="../img/index/logo.jpg"></a>
+        <ul><!--导航文字-->
+            <li class="list"><a class="life">平衡生活</a></li>
+            <li class="list shafa">
+                <a>沙发<span class="tri"><i class="iconfont">&#xe78f</i></span></a>
+                <div class="shafadiv">
+                    <ul>
+                        <li class="shafalist xilie" onmouseover="xianshi(this)">
+                            <a class="nav_gai">系列</a>
+                            <div class="xiliediv">
+                                <i class="iconfont xilietri">&#xe790</i>
+                                <ul>
+                                    <li><a>Beau</a></li>
+                                    <li><a>Duke</a></li>
+                                    <li><a>Fini</a></li>
+                                    <li><a>Goliat</a></li>
+                                    <li><a>Helios</a></li>
+                                    <li><a>Hug</a></li>
+                                    <li><a>Kooples</a></li>
+                                    <li><a>Luxe</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a>Layla</a></li>
+                                    <li><a>Nova</a></li>
+                                    <li><a>Modest</a></li>
+                                    <li><a>Noble</a></li>
+                                    <li><a>Rustam</a></li>
+                                    <li><a>Nomad</a></li>
+                                    <li><a>Vista</a></li>
+                                    <li><a>Zo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>材质</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri">&#xe790</i>
+                                <ul>
+                                    <li><a>真皮沙发</a></li>
+                                    <li><a>布艺沙发</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist gongneng" onmouseover="xianshi(this)">
+                            <a>功能</a>
+                            <div class="gongnengdiv">
+                                <i class="iconfont xilietri caizhitri gongnengtri">&#xe790</i>
+                                <ul>
+                                    <li><a>单人沙发</a></li>
+                                    <li><a>双人沙发</a></li>
+                                    <li><a>三人沙发</a></li>
+                                    <li><a>搁脚凳</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list fangzhipin">
+                <a>纺织品<span class="tri"><i class="iconfont">&#xe78f</i></span></a>
+                <div class="shafadiv" id="fangzhipindiv">
+                    <ul>
+                        <li class="shafalist xilie" onmouseover="xianshi(this)">
+                            <a>卧室织物</a>
+                            <div class="xiliediv" id="woshidiv">
+                                <i class="iconfont xilietri">&#xe790</i>
+                                <ul>
+                                    <li><span class="specialWord">功能</span></li>
+                                    <li><a>被套/封枕</a></li>
+                                    <li><a>床单/床笠/枕套</a></li>
+                                    <li><a>绗缝盖被/欧枕</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span class="specialWord">系列</span></li>
+                                    <li><a>Agnes</a></li>
+                                    <li><a>Bruges</a></li>
+                                    <li><a>Cronus</a></li>
+                                    <li><a>Damask</a></li>
+                                    <li><a>Diamante</a></li>
+                                    <li><a>Dovina</a></li>
+                                    <li><a>Elda</a></li>
+                                    <li><a>Goya Ombre</a></li>
+                                </ul>
+                                <ul class="specialUl1">
+                                    <li><a>Ginkgo</a></li>
+                                    <li><a>Haze</a></li>
+                                    <li><a>Jaipur Pima</a></li>
+                                    <li><a>Metis</a></li>
+                                    <li><a>Mercy</a></li>
+                                    <li><a>Lavinia</a></li>
+                                    <li><a>Lulang</a></li>
+                                    <li><a>Monet</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a>Montauk</a></li>
+                                    <li><a>Marcello</a></li>
+                                    <li><a>Namu</a></li>
+                                    <li><a>Olga</a></li>
+                                    <li><a>Ondine</a></li>
+                                    <li><a>Palcid</a></li>
+                                    <li><a>Tokaido</a></li>
+                                    <li><a>Zinnia</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist fangzhipinlist caizhi" onmouseover="xianshi(this)">
+                            <a>基础织物</a>
+                            <div class="caizhidiv" id="jichudiv">
+                                <i class="iconfont xilietri caizhitri" id="jichutri">&#xe790</i>
+                                <ul>
+                                    <li><span class="specialWord">材质</span></li>
+                                    <li><a>桑蚕丝</a></li>
+                                    <li><a>鹅绒</a></li>
+                                    <li><a>羽丝绒</a></li>
+                                </ul>
+                                <ul>
+                                    <li><span class="specialWord">功能</span></li>
+                                    <li><a>被芯</a></li>
+                                    <li><a>枕芯</a></li>
+                                    <li><a>靠垫芯</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist fangzhipinlist gongneng" onmouseover="xianshi(this)">
+                            <a>装饰织物</a>
+                            <div class="gongnengdiv">
+                                <i class="iconfont xilietri caizhitri gongnengtri">&#xe790</i>
+                                <ul>
+                                    <li><a>靠垫套</a></li>
+                                    <li><a>毯子</a></li>
+                                    <li><a>餐桌织物</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist" onmouseover="xianshi(this)">
+                            <a>卫浴织物</a>
+                            <div class="gongnengdiv">
+                                <i class="iconfont xilietri caizhitri gongnengtri" id="weiyutri">&#xe790</i>
+                                <ul>
+                                    <li><a>毛巾/浴巾</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list ditan">
+                <a>地毯<span class="tri"><i class="iconfont">&#xe78f</i></span></a>
+                <div class="shafadiv" id="ditandiv">
+                    <ul id="ditangai">
+                        <li class="shafalist xilie" onmouseover="xianshi(this)">
+                            <a>材质</a>
+                            <div class="xiliediv" id="caizhidiv">
+                                <i class="iconfont xilietri">&#xe790</i>
+                                <ul>
+                                    <li><a>羊毛地毯</a></li>
+                                    <li><a>竹麻类地毯</a></li>
+                                    <li><a>化纤类地毯</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>尺寸</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri">&#xe790</i>
+                                <ul>
+                                    <li><a>152*244cm</a></li>
+                                    <li><a>244*305cm</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list shipin">
+                <a>饰品<span class="tri"><i class="iconfont">&#xe78f</i></span></a>
+                <div class="shafadiv" id="shipindiv">
+                    <ul id="shipinul">
+                        <li class="shafalist xilie" onmouseover="xianshi(this)">
+                            <a>饰品</a>
+                            <div class="xiliediv" id="caizhidiv">
+                                <i class="iconfont xilietri">&#xe790</i>
+                                <ul>
+                                    <li><a>装饰画</a></li>
+                                    <li><a>墙饰</a></li>
+                                    <li><a>镜子</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>装饰摆件</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri">&#xe790</i>
+                                <ul>
+                                    <li><a>金属摆件</a></li>
+                                    <li><a>木制摆件</a></li>
+                                    <li><a>陶瓷摆件</a></li>
+                                    <li><a>玻璃摆件</a></li>
+                                    <li><a>石材摆件</a></li>
+                                </ul>
+                            </div>
+                        </li><li class="shafalist caizhi" onmouseover="xianshi(this)">
+                        <a>花/花瓶</a>
+                        <div class="caizhidiv">
+                            <i class="iconfont xilietri caizhitri" id="huatri">&#xe790</i>
+                            <ul>
+                                <li><a>装饰花</a></li>
+                                <li><a>花瓶</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>相框收纳</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="xiangkuangtri">&#xe790</i>
+                                <ul>
+                                    <li><a>相框</a></li>
+                                    <li><a>篮筐</a></li>
+                                    <li><a>储物盒</a></li>
+                                    <li><a>办公收纳</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>蜡烛香薰</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="lazhutri">&#xe790</i>
+                                <ul>
+                                    <li><a>蜡烛</a></li>
+                                    <li><a>香薰</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>烛台风灯</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="zhutaitri">&#xe790</i>
+                                <ul>
+                                    <li><a>烛台</a></li>
+                                    <li><a>风灯</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>卫浴用品</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="weiyuyongpintri">&#xe790</i>
+                                <ul>
+                                    <li><a>卫浴用品</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>餐厨用品</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="canchutri">&#xe790</i>
+                                <ul>
+                                    <li><a>餐具</a></li>
+                                    <li><a>筷子刀叉</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>茶具用品</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="chajutri">&#xe790</i>
+                                <ul>
+                                    <li><a>茶壶</a></li>
+                                    <li><a>茶杯</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>Nambe</a>
+                            <div class="caizhidiv">
+                                <i class="iconfont xilietri caizhitri" id="Nambetri">&#xe790</i>
+                                <ul>
+                                    <li><a>餐厨</a></li>
+                                    <li><a>相框</a></li>
+                                    <li><a>烛台</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list dengju">
+                <a>灯具<span class="tri"><i class="iconfont">&#xe78f</i></span></a>
+                <div class="shafadiv" id="dengjudiv">
+                    <ul id="dengjuul">
+                        <li class="shafalist xilie" onmouseover="xianshi(this)">
+                            <a>功能</a>
+                            <div class="xiliediv" id="gongdengdiv">
+                                <i class="iconfont xilietri">&#xe790</i>
+                                <ul>
+                                    <li><a>台灯</a></li>
+                                    <li><a>落地灯</a></li>
+                                    <li><a>吊灯</a></li>
+                                    <li><a>壁灯</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shafalist caizhi" onmouseover="xianshi(this)">
+                            <a>材质</a>
+                            <div class="caizhidiv" id="caizhidiv">
+                                <i class="iconfont xilietri caizhitri">&#xe790</i>
+                                <ul>
+                                    <li><a>铜灯</a></li>
+                                    <li><a>铁艺灯</a></li>
+                                    <li><a>水晶灯</a></li>
+                                    <li><a>实质灯</a></li>
+                                    <li><a>更多材质</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list"><a>礼品季</a></li>
+            <li class="list"><a>新品</a></li>
+            <li class="list"><a>定制</a></li>
+            <li class="list"><a>活动</a></li>
+            <li class="list sale">SALE</li>
+            <li class="list">&nbsp</li>
+
+        </ul>
+        <div class="navIcon">
+            <i class="iconfont navicon">&#xe670</i>
+            <i class="iconfont navicon">&#xf0178</i>
+            <i class="iconfont navicon">&#xe697</i>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="kongwei0"></div>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators分页按钮 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                </ol>
+                <!-- Wrapper for slides 轮播部分-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="../html/badroom_thing_Ginkgo.html"><img src="../img/textile/bedroom_textile.jpg" alt="..."></a>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../html/badroom_thing_Lulang.html"><img src="../img/textile/bedroom_textile2.jpg" alt="..."></a>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+</header>
+
+<section class="container-fluid">
+    <div class="kongwei1"></div>
+    <!--单图1-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 nei_bj juzhong_div">
+            <a href="../html/badroom_thing_Mecry.html"><img src="../img/textile/bedroom_textile3.jpg" class="pic_size" alt="..."></a>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+    <!--Double组图1-->
+    <div class="row">
+        <div class="ol-xs-1"></div>
+        <div class="col-xs-10 dingwei juzhong_div">
+            <img src="../img/textile/bedroom_textile4.jpg" class=" double_tu" alt="...">
+            <div class="div_wz">
+                <p class="double_wz">Namu</p>
+            </div>
+            <img src="../img/textile/bedroom_textile5.jpg" class=" double_tu"  alt="...">
+            <div class="div_wz2">
+                <p class="double_wz2">Agnes</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+    <!--图+文1-->
+    <div class="row pic_zc">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 nei_bj juzhong_div">
+            <img src="../img/textile/bedroom_textile6.jpg" class="double_tu_pic" alt=""/>
+            <div class="div_wz3">
+                <p class="double_wz3">Damask</p>
+            </div>
+            <img src="../img/textile/bedroom_textile7.jpg" class="double_tu_font" alt=""/>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+    <!--Dounle组图2-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei juzhong_div">
+            <img src="../img/textile/bedroom_textile8.jpg" class=" double_tu" alt="...">
+            <div class="div_wz">
+                <p class="double_wz">Tokaido</p>
+            </div>
+            <img src="../img/textile/bedroom_textile9.jpg" class=" double_tu"  alt="...">
+            <div class="div_wz2">
+                <p class="double_wz2">Olga</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--单图2-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 nei_bj juzhong_div">
+            <img src="../img/textile/bedroom_textile10.jpg" class="pic_size" alt="...">
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--Dounle组图3-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei juzhong_div">
+            <img src="../img/textile/bedroom_textile11.jpg" class=" double_tu" alt="...">
+            <div class="div_wz">
+                <p class="double_wz">Lavinia</p>
+            </div>
+            <img src="../img/textile/bedroom_textile12.jpg" class=" double_tu"  alt="...">
+            <div class="div_wz2">
+                <p class="double_wz2">Ondine</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--小Dounle组图1-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei smallDou_div">
+            <img src="../img/textile/bedroom_textile13.jpg" class=" double_tu smallDouble" alt="...">
+            <div class="div_wz4">
+                <p class="double_wz4">Montank</p>
+            </div>
+            <img src="../img/textile/bedroom_textile14.jpg" class=" double_tu smallDouble"  alt="...">
+            <div class="div_wz4_2">
+                <p class="double_wz4">Marcello</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--单图3-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dantu_3_div juzhong_div">
+            <img src="../img/textile/bedroom_textile15.jpg" class="pic_size " alt="...">
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--小Dounle组图2-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei smallDou_div">
+            <img src="../img/textile/bedroom_textile16.jpg" class=" double_tu smallDouble" alt="...">
+            <div class="div_wz4">
+                <p class="double_wz4">Goya Ombre</p>
+            </div>
+            <img src="../img/textile/bedroom_textile17.jpg" class=" double_tu smallDouble"  alt="...">
+            <div class="div_wz4_2">
+                <p class="double_wz4">Dovina</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--单图4-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dantu_3_div juzhong_div">
+            <img src="../img/textile/bedroom_textile18.jpg" class="pic_size" alt="...">
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--小Dounle组图3-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei smallDou_div">
+            <img src="../img/textile/bedroom_textile19.jpg" class=" double_tu smallDouble" alt="...">
+            <div class="div_wz4">
+                <p class="double_wz4">Jarpur</p>
+            </div>
+            <img src="../img/textile/bedroom_textile20.jpg" class=" double_tu smallDouble"  alt="...">
+            <div class="div_wz4_2">
+                <p class="double_wz4">Diamante</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--单图5-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dantu_3_div juzhong_div">
+            <img src="../img/textile/bedroom_textile21.jpg" class="dantu_3" alt="...">
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+    <!--小Dounle组图4(非对齐)-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 dingwei smallDou_div">
+            <img src="../img/textile/bedroom_textile22.jpg" class=" double_tu smallDouble0" alt="...">
+            <div class="div_wz4">
+                <p class="double_wz4">绗缝被/欧枕</p>
+            </div>
+            <img src="../img/textile/bedroom_textile23.jpg" class=" double_tu smallDouble1"  alt="...">
+            <div class="div_wz4_2">
+                <p class="double_wz4">床单床笠/枕套</p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="kongwei1"></div>
+
+</section>
+
+
+
+
+<div class="container" id="footercontainer">
+    <div id="myFooter">
+        <div id="content">
+            <div id="myul">
+                <ul>
+                    <li class="special">新手上路</li>
+                    <li><a>成为会员</a></li>
+                    <li><a>购物流程</a></li>
+                    <li><a>找回密码</a></li>
+                    <li><a>订单查询</a></li>
+                    <li><a>在线目录</a></li>
+                </ul>
+                <ul>
+                    <li class="special">帮助中心</li>
+                    <li><a>支付方式</a></li>
+                    <li><a>配送说明</a></li>
+                    <li><a>售后服务</a></li>
+                    <li><a>常见问题</a></li>
+                    <li><a>家具保养</a></li>
+                </ul>
+                <ul>
+                    <li class="special">客户服务</li>
+                    <li><a>会员介绍</a></li>
+                    <li><a>全国门店</a></li>
+                    <li><a>软装设计</a></li>
+                    <li><a>会员活动</a></li>
+                    <li><a>客诉受理</a></li>
+                </ul>
+                <ul>
+                    <li class="special">关于我们</li>
+                    <li><a>关于Tao</a></li>
+                    <li><a>媒体视角</a></li>
+                    <li><a>招聘信息</a></li>
+                    <li><a>品牌动态</a></li>
+                    <li><a>联系方式</a></li>
+                </ul>
+            </div>
+            <div id="erweima">
+                <p>
+                    <img src="../img/index/qrcode-weixin.jpg">
+                    <span>官方微信</span>
+                </p>
+                <p>
+                    <img src="../img/index/qrcode-weibo.jpg">
+                    <span>官方微博</span>
+                </p>
+            </div>
+            <div id="teldiv">
+                <div id="footerLogo"><img src="../img/index/forterlogo.png"></div>
+                <div id="telphone">
+                    <i class="iconfontfooter specialicon">&#xe606</i>
+                    <span id="number">400-888-9469</span>
+                </div>
+                <div id="share">
+                    <a href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.taolivingconcept.com%2fproduct-list-multiple-119800%2f1----Descending" title="分享到微博" ><i class="iconfontfooter" id="iconfont">&#xe66b</i></a>
+                    <a href="http://www.ijinshan.com/sem/xintop/f13.shtml?sfrom=166&keyID=22691" title="分享到微信"><i class="iconfontfooter">&#xe654</i></a>
+                    <a href="http://t.qq.com/" title="分享到腾讯微博" target="_blank"><i class="iconfontfooter">&#xe60e</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--黑框-->
+    <div id="black">
+        <div class="copyright">© 杭州安易贸易有限公司版权所有    浙ICP备 13023512号</div>
+    </div>
+</div>
+
+
+
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/fangzhi_js"></script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

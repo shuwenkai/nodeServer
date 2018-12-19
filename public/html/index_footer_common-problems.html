@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body{
+            background-image: url("../img/images/bg.png");
+        }
+        #ulLi li{
+            list-style: none;
+            float:left;
+            margin-left: 4px;
+            color: #999087;
+            font-size: 14px;
+        }
+        #ulLi li:hover{
+            color: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+        }
+    li{
+        list-style: none;
+    }
+        #liSpace{
+            position: relative;
+            line-height: 30px;
+        }
+       #liSpace li{
+           height: 30px;
+           overflow: hidden;
+           cursor: pointer;
+
+
+       }
+        /*.onD{*/
+            /*visibility: hidden;*/
+        /*}*/
+        .tuihuo:hover{
+            cursor: pointer;
+        }
+        .zhifu:hover{
+            cursor: pointer;
+        }
+        .wuliu:hover{
+            cursor: pointer;
+        }
+        .fapiao:hover{
+            cursor: pointer;
+        }
+        .wuliu:hover{
+            cursor: pointer;
+        }
+        .zhmm:hover{
+            cursor: pointer;
+        }
+        .gouwu:hover{
+            cursor: pointer;
+        }
+        .dindan{
+            cursor: pointer;
+        }
+        .youhui{
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: #999087;
+        }
+        .colorD{
+            color: #999087;
+
+        }
+        a:hover{
+            color: rgba(0, 0, 0, 0.74);
+        }
+        body{
+            line-height: 30px;
+        }
+        /*li{*/
+            /*color: rgba(0, 0, 0, 0.91);*/
+        /*}*/
+        /*ul{*/
+            /*color: black;*/
+        /*}*/
+
+       #dwgw{
+           line-height: 30px;
+       }
+        ul>li{
+            line-height: 30px;
+        }
+        ul{
+            line-height: 30px;
+        }
+        section{
+            position: relative;
+            height: 2600px;
+        }
+        h1{
+            font-size: 9px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/zuo.css"/>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<section>
+    <nav>
+        <div id="space">
+
+
+            <h1>帮助中心</h1>
+            <ul class="huiyuan">
+                <li  class="li" onclick="show(this)">
+                    新手指导
+                    <span class="color">Guide</span>
+                    <div class="on color"><a href="index_footer_Member-introduction.html">会员介绍</a></div>
+                    <div class="on color"><a href="index_footer_Shopping-process.html">购物流程</a></div>
+                    <div class="on color"><a href="index_footer_Retrieve-password.html">找回密码</a></div>
+                    <div class="on color"><a href="index_footer_Order-query.html">订单查询</a></div>
+                    <div class="on color"><a href="index_footer_Invoice-system.html">发票制度</a></div>
+                    <div class="on color"><a href="index_footer_coupons.html">优惠券使用</a></div>
+                    <div class="on color"><a href="#">网站地图</a></div>
+                </li>
+
+
+
+
+                <li class="li" onclick="show(this)">
+                    支付方式
+                    <span class="color">Payment</span>
+
+                    <div class="on color">
+                        <a href="index_footer_Method-of-payment.html">支付方式</a>
+
+
+                    </div>
+                    <div class="on color"><a href="index_footer_Refund-instructions.html"></a>退款说明</div>
+                </li>
+
+                <li class="li" onclick="show(this)">
+                    配送说明
+                    <span class="color">Delivery</span>
+
+                    <div class="on color"><a href="index_footer_Logistics-service.html">专业物流服务</a></div>
+                    <div class="on color"><a href="index_footer_courier.html">快递</a></div>
+                </li>
+
+
+                <li class="li" onclick="show(this)">
+                    售后服务
+                    <span class="color">After Sales</span>
+
+                    <div class="on color"><a href="index_footer_after-sales.html">退换货流程</a></div>
+                    <div class="on color"><a href="index_footer_Return-policy.html">退换货政策</a></div>
+                    <div class="on color"><a href="index_footer_Return-and-exchange-charges.html">退换货政费用及退款说明</a></div>
+                    <div class="on color"><a href="index_footer_After-sales-maintenance.html">售后保养服务</a></div>
+                </li>
+
+                <li class="li" onclick="show(this)">
+                    用户安全
+                    <span class="color">User Safety</span>
+
+                    <div class="on color"><a href="index_footer_protect-privacy.html">保护客户隐私</a></div>
+                    <div class="on color"><a href="index_footer_information.html">客户信息使用行为</a></div>
+                    <div class="on color"><a href="index_footer_Information-security.html">信息安全</a></div>
+                    <div class="on color"><a href="index_footer_Payment-security.html"></a>支付安全</div>
+                </li>
+            </ul>
+
+            <br/>
+            <div class="moveC"><a href="index_footer_Furniture-maintenance.html">产品保养 <span class="color">Maintain</span></a>
+            </div>
+            <div class="moveC"><a href="index_footer_common-problems.html">常见问题
+                <span class="color">FAQs</span></a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="allW">
+
+        <div class="hotDiv">
+
+
+            <ul id="ulLi">
+                <li style="color: rgba(0, 0, 0, 0.7) ">新手指导 &nbsp;</li>
+                <li><a href="#dwH">会员介绍·</a></li>
+                <li><a href="#dwgw">购物流程·</a></li>
+                <li><a href="#dwmm">找回密码·</a></li>
+                <li><a href="#dwdd">订单查询·</a></li>
+                <li><a href="#dwfp">发票制度·</a></li>
+                <li><a href="#dwyh">优惠券使用</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="dwH">
+                <h1>会员介绍</h1>
+                <ul id="liSpace">
+                    <li onclick="jieSao(this)" class="on">Q ：如何成为Tao会员?
+                        <div class="onD colorD">A ：
+                            您只需在线注册成为官方网站会员，或莅临门店完整填写“会员申请表”即可成为Tao尊贵会员。
+
+                            温馨提醒：通过门店申请成为会员的用户，可以在注册官方网站后点击“个人中心”—>“绑定门店会员卡”进行会员信息绑定。</div>
+                    </li>
+                    <li onclick="jieSao(this)" class="on">Q ：我在哪里查看自己的会员等级和积分?
+                        <div class="onD colorD">A ：
+                            您可以登录Tao官网，点击“个人中心”—>“账户信息”进行查看，也可莅临门店服务台咨询，或致电全国服务热线400-888-9469咨询。
+                        </div>
+                    </li>
+                    <li onclick="jieSao(this)" class="on">Q ：会员积分是否会清零？
+                        <div class="onD colorD">A ：
+                            不会，Tao会员积分会逐年积累。
+                        </div>
+                    </li>
+                    <li onclick="jieSao(this)" class="on">Q ：会员卡丢失了怎么办?
+                        <div class="onD colorD">
+                            A ：
+                            您好，你可以拨打全国客服热线400-888-9469或通过门店进行挂失，以免造成损失。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="dwgw">
+                <li> <h1>购物流程</h1></li>
+
+                <li onclick="gouW(this)" class="gouwu">
+                    Q ：放入购物车的商品还能修改颜色或尺码吗？
+                    <div style="display: none"><img src="../img/img/gwlcq1.jpg" alt=""/></div>
+                </li>
+                <li onclick="gouW(this)" class="gouwu">
+                    Q ：提交订单之后还能取消或者修改订单吗？怎么操作？
+                    <div style="display: none"><img src="../img/img/gwlcq2.jpg" alt=""/></div>
+                </li>
+                <li onclick="gouW(this)" class="gouwu">
+                    Q ：什么是定制商品？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        定制商品指在已有的沙发类款式和尺寸基础上提供多种面料或皮料供顾客选择（不包括尺寸定制），通常布艺沙发类定制周期为30-35天，皮沙发类为45-50天，物流配送时间另计。
+                    </div>
+                </li>
+            </ul>
+            <ul id="dwmm"><h1>找回密码</h1>
+                <li onclick="mima(this)" class="zhmm">
+                    Q ：我忘记登录密码了，怎么办?
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，您可以在登录界面点击“忘记密码”，通过自己的账号找回密码。
+                    </div>
+                </li>
+                <li onclick="mima(this)" class="zhmm">
+                    Q ：手机接收不到找回密码短信，怎么办？
+                    <div style="display: none" >
+                        <img src="../img/img/findpwd2.jpg" alt=""/>
+                    </div>
+                </li>
+                <li onclick="mima(this)" class="zhmm">
+                    Q ：邮箱接收不到验证码，怎么办？
+                    <div style="display:none">
+                        <img src="../img/img/zhmmq3.jpg" alt=""/>
+                    </div>
+                </li>
+            </ul>
+            <ul id="dwfp">
+                <h1>  发票制度</h1>
+
+                <li onclick="fapiao(this)" class="fapiao">
+                    Q ：在哪里可以开发票？
+                    <div style="display: none">
+                        <img src="../img/img/fpzd.jpg" alt=""/>
+                    </div>
+                </li>
+                <li  onclick="fapiao(this)" class="fapiao">
+                    Q ：发票可以同时开个人和公司的吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        抱歉，发票只能开个人或者公司其中之一。
+                    </div>
+                </li>
+                <li  onclick="fapiao(this)" class="fapiao">
+                    Q ：下单时忘记开发票了，收到货后可以补开发票吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可以的。请您联系在线客服或致电客服中心（400-888-9469），由客服人员为您补开发票。
+                        温馨提醒：Tao 会为您提供免费正规发票，开具发票时间为收货后一个月内，逾期将不予受理。由客服人员为您操作补开发票事宜，快递费用由 Tao 承担。
+                    </div>
+                </li>
+                <li  onclick="fapiao(this)" class="fapiao">
+                    Q ：发票抬头可以写个人名字吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可以的，发票抬头可选个人、单位或您的姓名。
+                    </div>
+                </li>
+                <li  onclick="fapiao(this)" class="fapiao">
+                    Q ：可以开哪些类型的发票？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，发票所开具的商品名称为商品明细或所购商品相关的大类名称，如：“家具”、“纺织品”、“饰品”等。
+                    </div>
+                </li>
+                <li  onclick="fapiao(this)" class="fapiao">
+                    Q ：发票是否包含配送费金额？
+
+                    <div style="display: none" class="colorD">
+                        A ：
+                        是的，发票金额为订单实付金额（含配送费金额），但不包含券。
+                    </div>
+                </li>
+            </ul>
+            <ul id="dwdd">
+                <h1>  订单查询</h1>
+
+                <li onclick="dindan(this)" class="dindan">
+                    Q ：在哪里查看我的订单信息？ 可以看到哪些信息？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您可以在“个人中心”—>“我的订单”页面，查看到您所有的订单信息，包括您订购的商品，订单编号，发货状态等。
+
+                        同时，您在 Tao 门店购物的订单信息也可以在“个人中心”—>“我的订单”—>“门店订单”查看到。
+                    </div>
+                </li>
+                <li onclick="dindan(this)" class="dindan">
+                    Q ：我可以查到哪些订单还没有付款吗？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        可以，在个人中心—>我的订单—>待付款 中可以查看还有哪些订单没有付款。
+                    </div>
+                </li>
+                <li  onclick="dindan(this)" class="dindan">
+                    Q ：下单后可以查询到配送状态吗？
+                    <div class="colorD" style="display: none">
+                        A ：
+                        可以。您可以在“个人中心”—>“我的订单”页面，查看到您所有的订单信息，包括您订购的商品，订单编号，发货状态等，并可通过“订单详情”查看详细配送状态。
+                    </div>
+                </li>
+                <li  onclick="dindan(this)" class="dindan">
+                    Q ：如何取消订单？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您可以登录官网，点击“个人中心”—>“我的订单”—>“取消订单”自助完成；如您的订单已支付成功，您可以点击“个人中心”—>“我的订单”—>“申请退款”来取消订单，您也可以联系在线客服或致电客服中心400-888-9469，由客服人员协助您取消订单。
+                    </div>
+                </li>
+            </ul>
+            <ul id="dwyh">
+                <h1> 优惠券使用</h1>
+
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：为什么个人中心中有优惠券，结算时却不能使用？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，可能是以下原因：
+                        <p>1）您的优惠券已过期，或还没到可使用的有效日期。</p>
+                        <p>2）您结算的订单没有满足该优惠券的使用条件。</p>
+                    </div>
+                </li>
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：我使用了500元的优惠券，实际订单只用了300元，剩下200元下次还能用吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        抱歉，一张优惠券只能使用一次，余额是不进行返还的，无法再次使用。
+                    </div>
+                </li>
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：一个订单中，可以使用多张优惠券吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可以的，只要您的订单满足了优惠券的使用条件就可使用。详见优惠券使用规则
+                    </div>
+                </li>
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：我取消订单了，优惠券还能恢复使用吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，可以恢复使用。当您进行了取消订单的操作，同时该订单中使用的优惠券还没有超过有效期，是可以恢复使用的
+                    </div>
+                </li>
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：使用了优惠券的订单退货后，优惠劵还能恢复使用吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，因退货所致未能使用的优惠券可以恢复使用。
+                    </div>
+                </li>
+                <li onclick="youhui(this)" class="youhui">
+                    Q ：使用了优惠券的订单办理退货，退款怎么计算？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，退款金额为您实际支付的订单金额，不包含使用优惠券所抵金额。
+
+                        温馨提醒：退货后的剩余订单，若仍满足优惠券的使用条件，则仍然可以使用优惠券；因退货而未使用的优惠券可以恢复使用。
+                    </div>
+                </li>
+            </ul>
+            <h1>支付方式</h1>
+            <ul>
+                支付方式
+                <li onclick="zhifu(this)" class="zhifu" >
+                    Q ：没有开通网银可以在线支付吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可以。您可以选择【未开通网银的信用卡支付】，或选择【支付宝平台】进行支付。
+                    </div>
+                </li>
+                <li onclick="zhifu(this)" class="zhifu">
+                    Q ：为什么我的银行卡不能在线支付？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可能是您的银行卡账户没有余额或余额不足，或者是您的银行卡未开通网上银行
+                    </div>
+                </li>
+                <li onclick="zhifu(this)" class="zhifu">
+                    Q ：哪些银行支持在线付款？
+                    <div style="display: none">
+                        <img src="../img/img/payment-method.jpg" alt=""/>
+                    </div>
+                </li>
+                <li onclick="zhifu(this)" class="zhifu">
+                    Q ：信用卡支付需要手续费吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        Tao 官网持信用卡支付无需支付手续费。
+                    </div>
+                </li>
+            </ul>
+            <h1>配送说明</h1>
+            <ul>
+                专业物流服务
+                <li  onclick="wuliu(this)" class="wuliu">
+                    Q ：Tao 能配送到哪些地区？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可配送中国大陆地区及港台（港台仅限快递）。
+                    </div>
+                </li>
+                <li  onclick="wuliu(this)" class="wuliu">
+                    Q ：Tao 提供哪些配送服务？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        Tao 有专业物流服务和合作第三方物流公司提供的快递配送服务。您可以自主选择合适的配送服务，详见配送说明。若有任何特殊配送需求，请您致电客服中心（400-888-9469）。
+                    </div>
+                </li>
+                <li  onclick="wuliu(this)" class="wuliu">
+                    Q ：下单后可以修改送货时间吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        可以的。您可以登录官网，在“个人中心—>我的订单—>修改信息“自助完成。您也可以联系在线客服或致电客服中心（400-888-9469），我们将尽可能为您提供便捷周到的服务。
+                        温馨提醒：在您确定订单并支付金额款项后，我们会根据订单交期提前一周和您预约送货时间。
+                    </div>
+                </li>
+                <li  onclick="wuliu(this)" class="wuliu">
+                    Q ：在 Tao 官网购物免运费吗？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，在 Tao 官网购物和门店购物的免运费条件是一致的。我们对全国14个城市142个主城区，只需订单中包含有家具类、地毯类、灯具类任一商品，即可享受免运费服务；其他地区尚不能享受免运费服务。详见配送说明
+                    </div>
+                </li>
+                <li  onclick="wuliu(this)" class="wuliu">
+                    Q ：我的订单运费是怎么计算的？
+                    <div style="display: none" class="colorD">
+                        A ：
+                        您好，不满足免运费服务条件的，根据您选择的配送方式，我们按正常物流配送成本价收取运费，视配送区域、货物大小而不同；具体收费金额，在您下单过程中选择“配送方式“后，系统会自动计算。若有任何疑问，请您致电客服中心（400-888-9469）。
+                    </div>
+                </li>
+            </ul>
+            <h1>售后服务</h1>
+            <p>&nbsp;</p>
+            <p style="color: black">退换货流程</p>
+            <ul>
+                <li onclick="tuihuo(this)" class="tuihuo">
+                    Q ：如何办理退换货？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        您好，如果需要退换货，您可以登录官网，点击“个人中心—>我的订单—>退货/退款”提出退换货申请，您也可以联系在线客服或致电客服中心（400-888-9469），我们会根据您商品的具体情况，协助您办理退换货手续。如您的商品符合退换货政策，请您务必保证商品有完整齐全包装、配件及原包装内的说明书、三包卡、合格证，无污损褪色且不影响二次销售，Tao 会尽快为您办理完成退货手续。详见退换货流程。
+                    </div>
+                </li>
+
+                <li>退换货政策</li>
+
+                <li  onclick="tuihuo(this)" class="tuihuo">
+                    Q ：退换货有什么条件吗？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        Tao 对所有质量有问题的商品在保质期内实行免费退换货。
+                        非质量原因的退换货，在保持完整齐全包装、配件及原包装内的说明书、三包卡、合格证，无污损褪色且不影响再次销售的情况下，非定制、剪裁、特价的商品，凭完整收货凭证或发票在收货之日起10天内可退换货。若无质量问题，定制类商品退换货需收取一定比例定制费用。
+                        温馨提醒：枕头、被芯、被套、枕套、等贴身使用的床上用品以及毛巾，卫浴产品及私人用品等售出后被使用影响二次销售的恕不接受退换货。
+                    </div>
+                </li>
+                <li>&nbsp;</li>
+                <li><p>退换货费用及退款说明</p></li>
+                <li  onclick="tuihuo(this)" class="tuihuo">
+                    Q ：退换货产生的运费谁出？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        因商品质量原因的退换货（包括客户收货检验时未发现的质量瑕疵），若确实存在不符合各类产品行业标准范围的质量瑕疵，Tao 将为您提供免费退换货服务。
+                        非质量问题的退换货引起了相关费用需要由您承担。详见退换货费用
+                    </div>
+                </li>
+                <li  onclick="tuihuo(this)" class="tuihuo">
+                    Q ：退货后，订单中享受的积分会扣除吗，赠品需要返还吗？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        您好，由于商品退换货产生退款的情况，退款金额的相应积分将从您会员卡累计积分中自动扣除，获得的相应赠品需要返还。如不能返还，赠品将按零售价在退款中扣除。
+                    </div>
+                </li>
+                <li  onclick="tuihuo(this)" class="tuihuo">
+                    Q ：申请退换货的订单，多久可以收到退款？
+                    <div  style="display: none" class="colorD">
+                        A ：
+                        您好，待退换货确认手续操作完毕后，财务安排退款事宜的正常工作时间为1周；根据退款支付方式和您所在的区域的不同，您收到退款的时间将会有所不同。详见退款说明
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+</script>
+<script>
+    var liSpace=document.getElementById("lispace");
+  var li=document.getElementsByTagName("li");
+    var on=document.getElementsByClassName("on");
+    var onD=document.getElementsByClassName("onD");
+   var gouwu=document.getElementsByClassName("gouwu");
+
+    function jieSao(obj){
+
+
+
+      if(obj.style.height==""||obj.style.height=="30px"){
+          obj.style.height="60px"
+      }else{
+          obj.style.height="30px"
+      }
+    for(var i=0;i<on.length;i++){
+        if(obj!=on[i]){
+            on[i].style.height="30px"
+        }
+    }
+
+
+    }
+
+    var picT=document.getElementById("picT");
+    function gouW(licK){
+
+
+    if(   licK.children[0].style.display=="none"){
+        licK.children[0].style.display="block";
+    }else{
+        licK.children[0].style.display="none";
+    }
+        for(var i=0;i<gouwu.length;i++){
+            if(licK!=gouwu[i]){
+                gouwu[i].children[0].style.display="none"
+            }
+        }
+    }
+    function mima(licK){
+        var zhmm=document.getElementsByClassName("zhmm");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<zhmm.length;i++){
+            if(licK!=zhmm[i]){
+                zhmm[i].children[0].style.display="none"
+            }
+        }
+    }
+    function fapiao(licK){
+        var fapiao=document.getElementsByClassName("fapiao");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<fapiao.length;i++){
+            if(licK!=fapiao[i]){
+                fapiao[i].children[0].style.display="none"
+            }
+        }
+    }
+    function youhui(licK){
+        var youhui=document.getElementsByClassName("youhui");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<youhui.length;i++){
+            if(licK!=youhui[i]){
+                youhui[i].children[0].style.display="none"
+            }
+        }
+    }
+    function zhifu(licK){
+        var zhifu=document.getElementsByClassName("zhifu");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<zhifu.length;i++){
+            if(licK!=zhifu[i]){
+                zhifu[i].children[0].style.display="none"
+            }
+        }
+    }
+    function wuliu(licK){
+        var wuliu=document.getElementsByClassName("wuliu");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<wuliu.length;i++){
+            if(licK!=wuliu[i]){
+                wuliu[i].children[0].style.display="none"
+            }
+        }
+    }
+    function tuihuo(licK){
+        var tuihuo=document.getElementsByClassName("tuihuo");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<tuihuo.length;i++){
+            if(licK!=tuihuo[i]){
+                tuihuo[i].children[0].style.display="none"
+            }
+        }
+    }
+    function dindan(licK){
+        var dindan=document.getElementsByClassName("dindan");
+
+        if(   licK.children[0].style.display=="none"){
+            licK.children[0].style.display="block";
+        }else{
+            licK.children[0].style.display="none";
+        }
+        for(var i=0;i<dindan.length;i++){
+            if(licK!=dindan[i]){
+                dindan[i].children[0].style.display="none"
+            }
+        }
+    }
+</script>
+<script src="../js/js1.js"></script>
+</body>
+</html>

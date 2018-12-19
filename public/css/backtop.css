@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icons/font_h5zfisezxquayvi/iconfont.eot');
+    src: url('../icons/font_h5zfisezxquayvi/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../icons/font_h5zfisezxquayvi/iconfont.woff') format('woff'),
+    url('../icons/font_h5zfisezxquayvi/iconfont.ttf') format('truetype'),
+    url('../icons/font_h5zfisezxquayvi/iconfont.svg#iconfont') format('svg');
+}
+.iconfontback{
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+#backtopdiv,#servediv{
+    width: 40px;
+    height: 40px;
+    background-color: #999087;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+}
+#servediv{
+    margin-top:3px;
+}
+#divwrap{
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+    z-index: 10000;
+}
+#divwrap a{
+    text-decoration: none;
+}

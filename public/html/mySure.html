@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/OrderCSS.css">
+    <style>
+    </style>
+</head>
+<body>
+
+<div class="container process">
+    <div class="row">
+        <span class="titleNow">1.我的购物车>></span>
+        <span class="titleNow red">2.确定订单信息>></span>
+        <span class="titleNow">3.选择支付方式>></span>
+        <span class="titleNow">4.完成</span>
+    </div>
+
+    <div id="shopaddress">
+        <h3>送货地址信息</h3>
+        <hr>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                收货人：彬少 联系方式: 110 收货地址:四川省 成都市 武侯区 高薪青年公寓0315
+            </label>
+            <span>默认地址</span>
+            <span>[修改]</span><br>
+            <button type="button" class="btn btn-success">+新增地址</button>
+        </div>
+    </div>
+
+    <div id="express">
+        <h3>配送信息</h3>
+        <hr>
+        <div class="radio">
+            <span>配送方式:</span>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 快递发货
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 物流发货
+            </label>
+            <p>费用共计<span>￥0.00</span>元</p>
+
+        </div>
+    </div>
+
+    <div id="invoice">
+        <h3>发票信息</h3>
+        <hr>
+        <span>发票类型:</span>
+        <label class="radio-inline">
+            <input type="radio" name="fapiao" id="inlineRadio1" value="option1"> 不开发票
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="fapiao" id="inlineRadio2" value="option2"> 普通发票
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="fapiao" id="inlineRadio3" value="option3"> 增值税发票 (如需开增值税发票，请致电客服 400-888-9469）
+        </label>
+    </div>
+    <div id="Remarks">
+        <h3>客户留言</h3>
+        <hr>
+        <input class="form-control" id="disabledInput" type="text" placeholder="五十字以内">
+    </div>
+    <div class="shopHeader">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <span>商品信息</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2">
+            <span>单价</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2">
+            <span>数量</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2">
+            <span>小计</span>
+        </div>
+    </div>
+    <div class="shoplist">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <img src="../img/shop_img/Convex 吊灯.jpg">
+            <div class="shopdetailed">
+                <h5>Convex 吊灯</h5>
+                <p><span>灯体：铁；灯罩：玻璃-</span><span>古黑色</span></p>
+                <p>规格: 直径40X高60-150CM</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2 num">
+            <span>￥1880.00</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2 num">
+            <span>2</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-2 num">
+            <span>￥3760.00</span>
+        </div>
+    </div>
+    <p class="wx">温馨提示：购物车中的商品无法保留库存，请您及时结算，商品库存以订单提交时为准。</p>
+    <div id="TJ">
+        <p>产品数量总计：<span id="allmany">1</span>件    商品金额(含运费):<span>￥</span><span id="allMoney">2980.00</span></p>
+        <p>合计<span>￥</span><span id="allNum">2980.00</span></p>
+
+        <a href="payment.html"><div class="olotijiao true">确认订单</div></a>
+        <div class="olotijiao false jixugouwu">继续购物</div>
+    </div>
+</div>
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/payment.js"></script>
+
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+</script>
+</body>
+</html>

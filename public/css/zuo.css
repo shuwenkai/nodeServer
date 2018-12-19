@@ -1,0 +1,72 @@
+.moveC>a:hover{
+    color: #ceaa78;
+    cursor: pointer;
+}
+.color{
+    color: #8d7f76;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.line{
+    position: absolute;
+    height: 1830px;
+    border-left: 2px solid #EAEAEA;
+    border-right: 2px solid white;
+    left: 30%;
+    top: 0;
+}
+body{
+    background-color: #F6F6F6;
+    font-size: 9pt;
+    position: relative;
+}
+#space{
+    top: 200px;
+    position: absolute;
+    width: 200px;
+    left: 10%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 11pt;
+    letter-spacing: 4px;
+}
+/*.bui{*/
+    /*height: 450px;*/
+    /*margin: 200px;*/
+/*}*/
+.li{
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+
+}
+#space>div:hover{
+    cursor: pointer;
+}
+.ulDiv>li:hover{
+    cursor: pointer;
+}
+.color>a{
+    text-decoration: none;
+    color: #8d7f76;
+
+}
+.color a:hover{
+    color: #ceaa78;
+}
+#space>ul>li:hover{
+    cursor: pointer;
+}
+.moveC>a{
+    text-decoration: none;
+    color: black;
+
+}
+/*a{*/
+    /*text-decoration: none;*/
+    /*color: #8d7f76;*/
+/*}*/

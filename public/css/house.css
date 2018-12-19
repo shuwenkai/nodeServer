@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: 1px red solid;*/
+}
+#egg_section{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+#food8_01{
+    margin-top: 70px;
+}
+#food8_01_p{
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 35px;
+    margin-top: 10px;
+}
+#food8_02{
+    margin-top: 20px;
+}
+#food8_02_h2{
+    margin-top: 100px;
+}
+#eggpart_1{
+    height: 3000px;
+    width: 100%;
+    margin-top: 30px;
+}
+#eggpart_1 div{
+    float: left;
+}
+#egg_shicai{
+    vertical-align: middle;
+    width: 450px;
+    height: 600px;
+}
+#egg_shicai p{
+    font-size: 16px;
+    line-height: 30px;
+    width: 350px;
+    margin-left: 50px;
+
+}
+#egg_shicai h3{
+    margin-top: 200px;
+}
+#egg_step{
+    width: 450px;
+    height: 600px;
+
+}
+#egg_step p{
+    font-size: 16px;
+    width: 350px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+#egg_step h3{
+    margin-top: 200px;
+    text-align: center;
+}
+#step_3{
+    width: 450px;
+    height: 600px;
+}
+#step_3 p{
+    font-size: 16px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 200px;
+    line-height: 30px;
+}
+#egg_canju_h6{
+    margin-top: 20px;
+}
+#egg_canju{
+    margin-top: 100px;
+}
+#egg_savor_p{
+    line-height: 30px;
+    font-size: 16px;
+}
+#food8_09{
+    margin-top: 100px;
+}
+#Food8_09_p{
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+#egg_footerimg{
+    width: 900px;
+    height: 600px;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    margin-top: 100px;
+}
+#egg_xinxi{
+    margin:220px auto 0;
+    margin-left: 100px;
+}
+#egg_footerimg div{
+    float: left;
+}
+#meishizuojia{
+    margin-top: 20px;
+}
+#egg_lastp{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 100px;
+    color: rgba(0, 0, 0, 0.58);
+}
+.house_gai1{
+    width: 900px;
+    height: 720px;
+}
+.egg_shicaigai{
+    margin-top: 150px;
+}
+#home_04{
+    margin-top: 20px;
+}
+#home_05{
+    margin-top: 100px;
+}
+.step_3_p1{
+    width: 350px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 50px;
+}
+#step_3_p1{
+    margin-top: 150px;
+}
+#huaping{
+    width: 450px;
+    height: 600px;
+}
+#home_07{
+    margin-top: 20px;
+}
+#home_08{
+    margin-top: 100px;
+}

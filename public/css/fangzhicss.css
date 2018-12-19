@@ -1,0 +1,401 @@
+/**{*/
+    /*outline: 1px red solid;*/
+/*}*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.kongwei0{
+    height: 100px;
+}
+.kongwei1{
+    height: 50px;
+}
+.nei_bj{
+    padding: 100px;
+}
+.double_tu{
+    width: 49%;
+}
+.double_tu_pic{
+    width: 60%;
+    height: 650px;
+}
+.double_tu_font{
+    width:39%;
+    height: 650px;
+}
+.bor1{
+    border: solid 2px red;
+}
+.dingwei{
+     position: relative;
+ }
+.juzhong_div{
+    text-align:center ;
+}
+.pic_size{
+    width: 100%;
+    height: 100%;
+}
+/*单图*/
+.pic_zc{
+    width: 100%;
+}
+.div_wz{
+    position:absolute ;
+    bottom: 0;
+    left: 1.85%;
+    width: 48%;
+    height: 8%;
+    text-align: center;
+    /*padding-top: 16px;*/
+    background-color: black;
+    opacity: 0.7;
+}
+.double_wz{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/*大D组图*/
+.div_wz2{
+    position:absolute ;
+    bottom: 0;
+    left: 50.15%;
+    width: 47%;
+    height: 8%;
+    text-align: center;
+    line-height: 50px;
+    right: 24px;
+    background-color: black;
+    opacity: 0.7;
+}
+.double_wz2{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/*图文组图*/
+.div_wz3{
+    position:absolute ;
+    bottom: 100px;
+    width: 47%;
+    left: 105px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    background-color: black;
+    opacity: 0.7;
+}
+.double_wz3{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/*小D组图*/
+.div_wz4{
+    position:absolute ;
+    bottom: 100px;
+    left: 127px;
+    width: 676px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    background-color: black;
+    opacity: 0.7;
+}
+.div_wz4_2{
+    position:absolute ;
+    bottom: 100px;
+    left: 808px;
+    width: 676px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    background-color: black;
+    opacity: 0.7;
+}
+.double_wz4{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.smallDouble{
+    width: 678px;
+    height: 678px;
+}
+.smallDou_div{
+    text-align: center;
+    padding:100px;
+}
+
+/*小D5组图*/
+.div_wz4{
+    position:absolute ;
+    bottom: 100px;
+    left: 126px;
+    width: 800px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    background-color: black;
+    opacity: 0.7;
+}
+.div_wz4_2{
+    position:absolute ;
+    bottom: 100px;
+    left: 930px;
+    width:555px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    background-color: black;
+    opacity: 0.7;
+}
+.double_wz4{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.smallDouble0{
+    width: 800px;
+    height: 678px;
+}
+.smallDouble1{
+    width: 555px;
+    height: 678px;
+}
+.smallDou_div{
+    text-align: center;
+    padding:100px;
+}
+
+
+/*单图3*/
+.dantu_3_div{
+    padding: 0 20px 0 20px;
+}
+.dantu_3{
+    width: 1566px;
+    height: 695px;
+}
+
+
+/*===================================*/
+/*jichu_zw*/
+/*jichu_zw单图1*/
+.jc_dantu_1_div{
+    padding: 0 20px 0 20px;
+}
+.jc_dantu_1{
+    width: 85%;
+    height: 60%;
+}
+
+.jc_3xiaotu{
+    text-align: center;
+    /*padding:100px 150px 100px 150px;*/
+    width: 100%;
+}
+.jc_3t_daxiao{
+    width: 25%;
+    height: 80%;
+}
+
+/*==================================================*/
+/*zhuangshi_zw装饰织物*/
+.zs_dt_1_div{
+    padding: 0 20px 0 20px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+.zs_dt_1{
+    width: 80%;
+    height: 80%;
+}
+
+
+.zs_dt_2_div{
+    padding: 0 20px 0 20px;
+}
+.zs_dt_2{
+
+    /*width: 100%;*/
+    width: 70%;
+    height: 70%;
+}
+/*zs_注释条*/
+.zs_div
+.zs_div_wz{
+    position:absolute ;
+    top:1704px;
+    left: 275px;
+    width:68%;
+    height: 4%;
+    text-align: center;
+    padding-bottom: 25px;
+    background-color: black;
+    opacity: 0.7;
+}
+.zs_wz{
+    color: blanchedalmond;
+    font-size: 20px;
+    /*height: 50px;*/
+    margin-top:14px
+}
+
+
+
+/*wy_注释条*/
+.wy_div_wz{
+    position:absolute ;
+    top:950px;
+    left: 169px;
+    width:1566px;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    background-color: black;
+    opacity: 0.7;
+}
+.wy_wz{
+    color: blanchedalmond;
+    font-size: 20px;
+    /*height: 50px;*/
+    margin-top:14px
+}
+
+
+
+/*================新品================*/
+/*背景图*/
+.xinpin_tu{
+    background-image: url("../img/textile/fa1701.jpg");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    position: relative;
+    transition-duration:1s;
+}
+/*静态文字设置*/
+.da_wz{
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: serif  ;
+    position: absolute;
+    left: 420px;
+    top: 110px;
+}
+.xiao_wz{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: serif  ;
+    position: absolute;
+    left: 510px;
+    top: 230px;
+}
+
+
+
+
+
+
+/*按钮*/
+.an_jiaju{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_shafa{
+    color: white;
+    text-decoration:none;
+    font-size:18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_fangzhi{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_dengju{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_shipin{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+.an_ditan{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*背景移入*/
+.an_bk{
+    position: absolute;
+    left: 520px;
+    top: 280px;
+    width: 8em;
+    height: 250px;
+    /*border: solid 2px blue;*/
+}
+.an_bk>a{
+
+    text-align: center;
+    /*border: solid 2px red;*/
+
+}
+.an_bk>a:hover{
+    background-color: white;
+}
+
+.an_bj{
+    margin: 6px;
+}
+
+
+
+
+/*按钮移入*/
+.an_jiaju:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1701.jpg");*/
+}
+.an_shafa:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1702.jpg");*/
+}
+.an_fangzhi:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1703.jpg");*/
+}
+.an_dengju:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1704.jpg");*/
+}
+.an_shipin:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1705.jpg");*/
+}
+.an_ditan:hover{
+    color: black;
+    background-color: white;
+    /*background-image: url("/img/fa1706.jpg");*/
+}

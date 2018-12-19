@@ -1,0 +1,3228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--如果用户使用IE浏览器打开页面，使用IE的最高版本或者IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--initial-scale=1:设置初始化缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../js/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim 和 Respjs1d.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respjs1d.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--导航-->
+    <style>
+
+        *{margin:0;padding:0;list-style:none;}
+        html{background-color:#E3E3E3; font-size:14px; color:#000; font-family:'微软雅黑'}
+        h2{line-height:30px; font-size:20px;}
+        a,a:hover{ text-decoration:none;}
+        pre{font-family:'微软雅黑'}
+
+
+        ::selection{
+            background-color: inherit;
+        }
+        body{
+            height: 100% !important;
+            background-image: url("../img/sofa1/bg.png");
+            /*background-color: rgba(244, 244, 244, 0.82);*/
+        }
+        a{
+            text-decoration: none;
+            color:#8c7f76;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        /*html{*/
+            /*height: 100%;*/
+        /*}*/
+        #gerennav{
+            height: 600px;
+            padding-top: 120px;
+            padding-left: 8%;
+            display: inline-block;
+            width: 30%;
+        }
+        #gerennav .taod{
+            /*padding-left: 50%;*/
+            margin-bottom: 10px;
+        }
+        .nav{
+            letter-spacing: 3px;
+        }
+        .nav span{
+            letter-spacing: 1px;
+            font-family: engellight;
+        }
+        .boby a{
+            font-size: 12px;
+            cursor: pointer;
+            transition: all .1s linear;
+            text-decoration: none;
+        }
+
+        .hover1{
+            color: #8c7f76;
+        }
+        .hover{
+            color:#ceaa78;
+        }
+        .nav2{
+            margin-top: 25px;
+        }
+        #gerennav a:hover{
+            color: #ceaa78;
+            text-decoration: none;
+        }
+        #line1{
+            display: inline-block;
+            height: 84% ;
+            border-left: 2px solid #eaeaea;
+            width: 2px;
+            background-color: #fdfdfd;
+            border-right: 1px solid #ffffff;
+            border-radius: 2px;
+            position: absolute;
+            left: -100px;
+        }
+        #dingdan{
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            padding-top: 120px;
+        }
+        *{
+            box-sizing: inherit;
+        }
+        .muban{
+            display: none;
+        }
+        .muban2{
+            display: inline-block;
+        }
+        body{
+            height: 100% !important;
+        }
+    </style>
+    <!--订单-->
+    <style>
+        #dangmoban{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(80, 80, 80, 0.71);
+            z-index: 15;
+            top: 0;
+            left: 0;
+        }
+        .quxiaodingdan{
+            color: #8c7f76;
+        }
+        .tttjjj div{
+            margin-top: 30px;
+        }
+        #shifouquxiao{
+            display: none;
+            width: 302px;
+            position: fixed;
+            height: 103px;
+            z-index: 16;
+            top: 40%;
+            left: 40%;
+            background-color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .tiaoshangpinxiangqing{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .orange{
+            color:#d07437;
+        }
+        .xiahuaxian{
+            text-decoration: underline;
+        }
+        .xiahuaxian:hover{
+            text-decoration: underline;
+        }
+        .tiaoxiangqing{
+            margin-right: 36px;
+            margin-left: 24px;
+        }
+        .caizhixiangqing{
+            margin-right: 64px;
+        }
+        .dingdanname{
+            margin-right: 215px;
+        }
+        .dingdanname:hover{
+            color: #333333;
+        }
+        .dingdanname1{
+            margin-right: 59px;
+        }
+        .dingdanname2{
+            margin-right: 48px;
+        }
+        .fukuan{
+            padding-top: 2px;
+            width: 36px;
+            height: 18px;
+            display: inline-block;
+            text-align: center;
+        }
+        .fukuan:hover{
+            color: #f2f2f2;
+        }
+        .dingdanh{
+            /*outline: 1px solid red;*/
+            height: 176px;
+            margin-top: 30px;
+            color: #8c7f76;
+            font-size: 13px;
+        }
+        .dindanhao{
+            margin-right: 10px;
+        }
+        .tijiaoshijian{
+            background-color: white;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .dingdanxiangqing{
+            display: inline-block;
+            height: 100px;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color:#8c7f76;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        #dingdantou span{
+            margin-right: 30px;
+            display: inline-block;
+            padding-bottom: 4px;
+            cursor: pointer;
+            color:  #8c7f76;
+        }
+        #dingdantou span:first-child{
+            color: #5b5652;
+            padding-bottom: 0;
+            border-bottom: 4px solid #ceaa78;
+        }
+        #daifu a:hover{
+            color: #4e4a46;
+        }
+        #qiehuan{
+            color: #8c7f76;
+        }
+        #daifu input{
+            width: 66pt;
+            height: 20px;
+        }
+        ::-webkit-input-placeholder {
+            color: #c1b7ae;
+            font-size: 12px;
+            text-align: left;
+            font-weight: lighter;
+        }
+        #daifu span:nth-child(3){
+            margin-left: 20px;
+        }
+        #qiehuan{
+            margin-top: 30px;
+        }
+        .chaxun{
+            margin-top: 10px;
+        }
+        .chaxun input{
+            margin-left: 3px;
+            width: 150px;
+            height: 22px;
+        }
+        input{
+            padding-left: 5px;
+            background-color: #fff;
+            outline: 0;
+            border: 1px solid #C6C6C6;
+        }
+        .chaxun span:last-child{
+            margin-left: 2pt;
+            line-height: 24px;
+            width: 45px;
+            color: #fff;
+            background: #999087;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 12px;
+            vertical-align: top;
+        }
+        .shangping{
+            width: 690px;
+            height: 34px;
+            line-height: 34px;
+            background: #efeeed;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #e2e3e4;
+            margin-top: 10px;
+        }
+        .shangping li{
+            margin-right: 35px;
+        }
+        .shangping li:first-child{
+            margin-right: 300px;
+            margin-left: 10px;
+        }
+        .shangping li:last-child{
+            margin-right: 0;
+        }
+        *{
+            box-sizing: inherit;
+        }
+    </style>
+    <!--优惠券-->
+    <style>
+        *{
+            box-sizing: inherit;
+        }
+        #youhuiquan{
+            color: #8c7f76;
+        }
+        #youhuiquan a{
+            display: inline-block;
+            margin-right: 40px;
+            height: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: #8c7f76;
+            cursor: pointer;
+
+        }
+        #youhuiquan a:first-child{
+            color: #5b5652;
+            border-bottom: 4px solid #ceaa78;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #8c7f76;
+        }
+        .shangpingquan{
+            width: 690px;
+            height: 34px;
+            line-height: 34px;
+            background: #efeeed;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #e2e3e4;
+            margin-top: 35px;
+        }
+        .shangpingquan{
+            color: #8c7f76;
+        }
+        .shangpingquan li{
+            margin-right: 80px;
+        }
+        .shangpingquan li:first-child{
+            margin-right: 100px;
+            margin-left: 10px;
+        }
+        .shangpingquan li:last-child{
+            margin-right: 0;
+        }
+        h3{
+            font-size: 1pc;
+            line-height: 2em;
+            color: #5b5652;
+            margin-bottom: .5em;
+            margin-top: 150px;
+        }
+        .tiaoxuan a::selection{
+            background-color: inherit;
+        }
+        .tiaoxuan a{
+            background: #ceaa78;
+            color: #fff;
+            display: inline-block;
+            padding-right: 1em;
+            padding-left: 1em;
+            line-height: 2em;
+            text-decoration: none;
+        }
+        .tiaoxuan a:hover{
+            text-decoration: none;
+            background: #bc9b6e;
+        }
+        .mt36 a{
+            transition: all .1s linear;
+            margin-right: 30px;
+        }
+        .mt36 a:hover{
+            color: #333;
+        }
+    </style>
+    <!--收藏的单品-->
+    <style>
+        .tiaoxuan a::selection{
+            background-color: inherit;
+        }
+        .tiaoxuan a{
+            background: #ceaa78;
+            color: #fff;
+            display: inline-block;
+            padding-right: 1em;
+            padding-left: 1em;
+            line-height: 2em;
+            text-decoration: none;
+            margin-left: -10px;
+        }
+        .tiaoxuan a:hover{
+            text-decoration: none;
+            background: #bc9b6e;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        h3{
+            font-size: 1pc;
+            line-height: 2em;
+            color: #5b5652;
+            margin-bottom: .5em;
+            margin-top: 150px;
+        }
+        *{
+            box-sizing: inherit;
+        }
+
+        .span{
+            color: #8c7f76 !important;
+            cursor: pointer;
+            text-decoration: none !important;
+        }
+
+        #shoucangdanping {
+            position: relative;
+        }
+        #shoucangdanping span:first-child:hover{
+            color: #282828;
+        }
+        .lineX{
+            margin-top: 8px;
+            width: 665px;
+            height: 0;
+            overflow: hidden;
+            border-top: 2px solid #eaeaea;
+            border-bottom: 2px solid #fff;
+        }
+        #leimu,#leimu1{
+            z-index: 8;
+            transition: all .4s linear .1s;
+            padding:20px 0 15px 25px ;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0);
+            width: 100px;
+            height: 132px;
+            top: 34px;
+            border: 1px solid rgba(217, 217, 217, 0);
+            color: rgba(140, 127, 118, 0);
+            visibility: hidden;
+        }
+        #leimu1{
+            top:-1px;
+            left: 110px;
+            border-left: none;
+        }
+        #leimu1 li{
+            margin-bottom: 10px;
+        }
+        #leimu1 li:first-child{
+            color: #bc9b6e;
+        }
+        #leimu1 li:nth-child(2) span{
+            /*position: absolute;*/
+            margin-right: 20px;
+            margin-left: -32px;
+        }
+        #leimu li{
+            margin-bottom: 10px;
+        }
+        #mobanD li:hover{
+            color: #232323;
+            cursor: pointer;
+        }
+        .leimutou:hover+#leimu{
+            background-color: white;
+            visibility: visible;
+            color: #8c7f76;
+            border: 1px solid #d9d9d9;
+        }
+        #leimu:hover{
+            background-color: white;
+            visibility: visible;
+            color: #8c7f76;
+            border: 1px solid #d9d9d9;
+        }
+        .sofa:hover #leimu1{
+            background-color: white;
+            visibility: visible;
+            color: #8c7f76;
+            border: 1px solid #d9d9d9;
+            border-left: none;
+        }
+        #shanchu span{
+            vertical-align: top;
+            margin-left: 5px;
+            font-size: 13px;
+            color: #8c7f76;
+            font-weight: lighter;
+        }
+        #shanchu input{
+            cursor: pointer;
+        }
+        #shanchudanping{
+            line-height: 21px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        #shanchuT{
+            vertical-align: middle;
+            font-size: 13px;
+        }
+        #shanchuT:hover{
+            color: black !important;
+        }
+        #shanchuT span:first-child{
+            margin-left: 30px;
+            vertical-align: top;
+            margin-top: 2px;
+            margin-right:3px
+        }
+        #shanchuT span:last-child{
+            vertical-align: top;
+            margin-top: 55px;
+        }
+        .dangping{
+            margin-right: 5px;
+            text-align: center;
+            width: 215px;
+            height: 257px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .dangping img{
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .dangping input{
+            position: absolute;
+            top: 5px;
+            left: 8px;
+        }
+        .dangping p{
+            display: inline-block;
+            position: absolute;
+            top: 190px;
+            color: #ffffff;
+            left: 36%;
+        }
+        .dangping a{
+            font-size: 13px;
+        }
+        .dangping a:hover{
+            color: black !important;
+        }
+        .dangping div{
+            font-size: 12px;
+        }
+        .dangping input{
+            cursor: pointer;
+        }
+    </style>
+    <!--收藏的优惠券-->
+    <style>
+        .tiaoxuan a::selection{
+            background-color: inherit;
+        }
+        .tiaoxuan a{
+            background: #ceaa78;
+            color: #fff;
+            display: inline-block;
+            padding-right: 1em;
+            padding-left: 1em;
+            line-height: 2em;
+            text-decoration: none;
+            margin-left: -10px;
+        }
+        .tiaoxuan a:hover{
+            text-decoration: none;
+            background: #bc9b6e;
+        }
+        h3{
+            font-size: 1pc;
+            line-height: 2em;
+            color: #5b5652;
+            margin-bottom: .5em;
+            margin-top: 150px;
+        }
+        *{
+            box-sizing: inherit;
+        }
+        #pingheng img{
+            width: 215px;
+            height: 94px;
+        }
+        #pingheng .dangping{
+            height: 120px;
+        }
+    </style>
+    <!--账户信息-->
+    <style>
+        #dingdantou span{
+            margin-right: 30px;
+            display: inline-block;
+            padding-bottom: 5px;
+            cursor: pointer;
+            height: 25px;
+            color:  #8c7f76;
+        }
+        #dingdantou span:first-child{
+            color: #5b5652;
+            padding-bottom: 0;
+            border-bottom: 4px solid #ceaa78;
+        }
+        .jibenxinxi p:first-child{
+            margin-top: 50px;
+        }
+        .jibenxinxi{
+            color:#8c7f76 ;
+        }
+        .mark {
+            display: inline-block;
+            width: 75pt;
+            height: 26px;
+            margin-right: 10px;
+            margin-left: 10px;
+            background: #fff;
+            text-align: center;
+            color: #414042
+        }
+        .mark img{
+            margin-top: -1px;
+            margin-right:3px;
+        }
+        .mark span{
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+        .mark2{
+            line-height:26px;
+        }
+        .xiaofei{
+            margin-bottom: 40px;
+        }
+        .label{
+            color: #756d67;
+        }
+        input:focus{
+            outline: none;
+        }
+        #formUpdateAccountInfo a{
+            text-decoration: underline;
+            color: #323232;
+        }
+        .one{
+            margin-right: 7px;
+        }
+        .two{
+            margin-right: 12px;
+        }
+        .three{
+            margin-right: 4px;
+        }
+        #demo{
+            width: 152px;
+        }
+        input[type="text"]:disabled {
+            background-color: #fff;
+            color:#C0B7AD;
+            border: 1px solid #C6C6C6;
+        }
+        .btn.s2 {
+            border-color: #ceaa78;
+            background: #ceaa78;
+            color: #fff
+        }
+        .btn {
+            cursor: pointer;
+            border: 1px solid #e4e0dc;
+            color: #999188;
+            background: #fff;
+            line-height: 22px;
+            border-radius: inherit;
+            height: 22px;
+            width: 106px;
+            margin-right: 15px;
+        }
+        .pt36{
+            margin-top: 50px;
+        }
+        #btnSubmit:hover{
+            background-color: #be9d6f;
+        }
+        body{
+            height: 900px;
+        }
+        .text-title{
+            font-size: 14px;
+            line-height: 36px;
+            color: #645e58;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .huiyuandengji p{
+            font-size: 12px;
+        }
+        .huiyuandengji p:nth-child(2){
+            margin-top: 10px;
+        }
+        dt{
+            display: inline-block;
+        }
+        dd{
+            display: inline-block;
+            margin-left: 40px;
+            line-height: 26px;
+        }
+        .icon-wrap{
+            position: relative;
+            top: -135px;
+        }
+        .dandqian{
+            position: absolute;
+            left: 7px;
+            top: 78px;
+            font-size: 12px;
+            color: rgb(174, 0, 0);
+            font-weight: lighter;
+        }
+        dl{
+            margin-top:10px;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .icon-wrap1{
+            top: -53px;
+            left: 4px;
+        }
+        .huiyuandengji dl:first-child{
+            margin-top:30px;
+        }
+        .ddd{
+            margin-left: 48px;
+        }
+        .ddd2{
+            margin-left: 52px;
+        }
+        .icon-wrap2{
+            top: -105px;
+        }
+        .icon-wrap3{
+            left: 7px;
+        }
+        .ddd3{
+            margin-left: 58px;
+        }
+        .text-title{
+            color: #3d3a35;
+        }
+        #cardBind a{
+            text-decoration: underline;
+            color: black;
+        }
+        *{
+            box-sizing: inherit;
+        }
+        label{
+            color: #645e58 !important;
+        }
+    </style>
+    <!--门店会员卡-->
+    <style>
+        body{
+            -moz-user-select: none; /*火狐*/ /*禁止用户在页面选择文字*/
+            -webkit-user-select: none; /*webkit浏览器*/
+            -ms-user-select: none; /*IE10*/
+            -khtml-user-select: none; /*早期浏览器*/
+            user-select: none;
+        }
+
+        #canvas{
+            float:right;
+            display: inline-block;
+            border:1px solid #ccc;
+        }
+
+        #tijiao div{
+            width: 30px;
+            height: 15px;
+            line-height: 15px;
+            transition: all .1s ;
+        }
+        #tijiao div:first-child:hover{
+            background-color: rgb(188, 155, 110);
+        }
+        #canvas {
+            float: none;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: inherit;
+            height: 25px;
+            vertical-align: middle;
+            margin-top: -3px;
+            width: 80px;
+        }
+
+        .mb24 {
+            margin-bottom: 24px
+        }
+        .mb36 span{
+            color:#999087;
+        }
+        .mb36 span:first-child{
+            color:#d07437;
+        }
+        .mc-bd label{
+            color: #afa59a !important;
+        }
+        .mc-bd input{
+            height: 25px;
+            width: 240px;
+        }
+        #VerifyCode{
+            width: 100px;
+            margin-left: 24px;
+        }
+        #mendianhui{
+            margin-top: 30px;
+        }
+        #qiehuan3{
+            vertical-align: bottom;
+            cursor: pointer;
+            color: #999087;
+        }
+        #qiehuan3:hover{
+            color: #343434;
+        }
+
+    </style>
+    <!--绑定淘宝账户-->
+    <style>
+        body{
+            -moz-user-select: none; /*火狐*/ /*禁止用户在页面选择文字*/
+            -webkit-user-select: none; /*webkit浏览器*/
+            -ms-user-select: none; /*IE10*/
+            -khtml-user-select: none; /*早期浏览器*/
+            user-select: none;
+        }
+
+
+        .pt37{
+            margin-top: 50px;
+        }
+        #tijiao2 div{
+            width: 30px;
+            height: 15px;
+            line-height: 15px;
+            transition: all .1s ;
+        }
+        #tijiao2 div:first-child:hover{
+            background-color: rgb(188, 155, 110);
+        }
+
+        .mb24 {
+            margin-bottom: 24px
+        }
+        .mb37 span{
+            color:#999087;
+        }
+        .mb37 span:first-child{
+            color:#d07437;
+        }
+        .mc-bd label{
+            color: #afa59a !important;
+        }
+        .mc-bd input{
+            height: 25px;
+            width: 240px;
+        }
+
+        #taobao{
+            margin-top: 30px;
+        }
+        #cardNo2{
+            margin-left: 12px;
+        }
+    </style>
+    <!--安全设置-->
+    <style>
+        #mobanA h5{
+            margin-bottom: 40px;
+        }
+        #anquanjibie{
+            font-size: 14px;
+            margin-bottom: 50px;
+            color: #807970;
+        }
+        b{
+            color: #020202;
+            font-weight: 400;
+        }
+        #anquanjibie span{
+            margin-left: 30px;
+        }
+        .title{
+            display: inline-block;
+            width: 138px;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+        .title span{
+            margin-left: 16px;
+            font-size: 15px;
+            color: #6d675f;
+            vertical-align: middle;
+        }
+        .tishian{
+            color:#8c7f76 ;
+            font-size: 12px;
+        }
+        .tishian a{
+            /*margin-left: 180px;*/
+            margin-top: 10px;
+            float: right;
+            color: black;
+            text-decoration: underline;
+        }
+        .qiangdu{
+            margin-top: 5px;
+            font-size: 12px;
+            color: #685e58;
+        }
+        .line3{
+            height: 0;
+            overflow: hidden;
+            border-top: 2px solid #eaeaea;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 30px;
+        }
+        .xiugai input{
+            width: 240px;
+            height: 25px;
+            margin-left: 40px;
+        }
+        .inputm{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .jinshi5{
+            margin-left: 10px;
+            color:#a32b3f;
+            font-weight: lighter;
+        }
+        .lishi{
+            display: none;
+            border: 1px solid #e1e1e1;
+            position: absolute;
+            width: 245px;
+            height: 50px;
+            text-align: left;
+            background-color: white;
+            left: 101px;
+        }
+        .lishi p{
+            padding-left:10px;
+            height: 25px;
+            margin-bottom: 0;
+            line-height: 25px;
+            transition: all .1s ;
+        }
+        .lishi p:last-child:hover{
+            background-color: #d1d1d1;
+            cursor: pointer;
+        }
+        #tankuang{
+            margin-top: 0;
+            margin-left: 40px;
+        }
+        .bs-example-tooltip .tooltip {
+            position: relative;
+            display: inline-block;
+            margin: 10px 20px;
+            opacity: 1;
+        }
+        .tooltip.bottom {
+            padding: 5px 0;
+            /*margin-top: 3px;*/
+        }
+        .tooltip {
+            transition: all .2s linear;
+            z-index: 1070;
+            display: none;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.42857143;
+            /*text-align: left;*/
+            text-align: start;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: none;
+            letter-spacing: normal;
+            word-break: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: normal;
+            /*filter: alpha(opacity=0);*/
+            opacity: 0;
+            line-break: auto;
+        }
+        .tooltip-arrow{
+            border-color: rgba(214, 214, 214, 0.39);
+        }
+        .tooltip-inner{
+            background-color: snow;
+            box-shadow: 0 0 3px 3px #d1d3d4;
+        }
+        #tankuang{
+            margin-top: 0;
+            margin-left: 40px;
+        }
+        .andeng{
+            display: inline-block;
+            background-color: #D1D1D1;
+            height: 3px;
+            width: 40px;
+            border-radius: 1px;
+            vertical-align: top;
+            margin-top: 8px;
+        }
+        .tooltip-inner{
+            padding:25px 30px 10px 30px;
+            width: 200px ;
+            height: 140px;
+            border-radius: 0;
+            color: black;
+            text-align: left;
+            max-width: 260px;
+        }
+        #querenmima input{
+            margin-left: 12px;
+        }
+        #miMa,.inputm,#querenmima{
+            color: #756d67 !important;
+        }
+        .olotijiao{
+            display: inline-block;
+            width: 54px;
+            height: 28px;
+            border:1px solid #e4e0dc;
+            text-align: center;
+            line-height: 28px;
+            background-color: white;
+            cursor: pointer;
+            margin-top: 60px;
+            transition: all .2s;
+            color: #9a9a9a;
+            margin-right: 10px;
+        }
+        .true{
+            background-color: #ceaa78;
+            border: none;
+            color: white;
+        }
+        .true:hover{
+            background-color: #ba9a6d;
+        }
+        .false:hover{
+            color: #616161;
+            border:1px solid #a7a4a1;
+        }
+        .inputtt{
+            margin-left: 12px;
+            width: 240px;
+            border: 1px solid #c1b7ae;
+            border-top-color: #999087;
+            height: 25px;
+        }
+        #yyy .label{
+            color: #c0b3a9;
+            font-size: 12px;
+        }
+        .input-val{
+            height: 25px;
+        }
+        #lishi2{
+            left: 93px;
+        }
+        #changecolor{
+            color: #999087;
+        }
+        #changecolor+span{
+            color: #d07437;
+        }
+        #youxiangumima2{
+            margin-left: 20px;
+        }
+        #lishi3{
+            height: 25px;
+        }
+        .huoquyouxiang{
+            display: inline-block;
+            width: 110px;
+            height: 28px;
+            border: 1px solid #d7d3d0;
+            cursor: pointer;
+            background-color: #EDEDED;
+            line-height: 28px;
+            text-align: center;
+            color: #999188;
+            transition: all .2s;
+            position: relative;
+        }
+        .huoquyouxiang:hover{
+            color: #8b837c;
+            border: 1px solid #b7b4b1;
+        }
+        .danga{
+            display: none;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 112px;
+            height: 30px;
+        }
+        .bangdingyouxiang3 span{
+            color: #999087 !important;
+        }
+        .bangdingyouxiang3 span:last-child{
+            color: #d07437 !important;
+        }
+        .bangdingyouxiang3 a,.xiugaibangdingshouji3 a{
+            text-decoration: underline;
+        }
+        .bangdingyouxiang3 a:hover{
+            color: #505050;
+        }
+        .xiugaibangdingshouji3 a:hover{
+            color: #505050;
+        }
+        .bangtrue{
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        .xiugaibangdingshouji a{
+            text-decoration: underline;
+            color: #232323;
+        }
+        .p22{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .xiugaibangdingshouji2 span{
+            color: #999087 !important;
+        }
+        .xiugaibangdingshouji2 span:nth-child(2){
+            color: #d07437 !important;
+        }
+        .xiugaibangdingshouji3 span{
+            color: #999087 !important;
+        }
+        .xiugaibangdingshouji3 span:last-child{
+            color: #d07437 !important;
+        }
+        #lishi5{
+            left: 94px;
+        }
+        #sss #canvas{
+            margin-top: -2px;
+        }
+    </style>
+    <!--收货地址-->
+    <style type="text/css">
+        * { -ms-word-wrap: break-word; word-wrap: break-word; }
+        html { -webkit-text-size-adjust: none; text-size-adjust: none; }
+        /*html, body {height:99%;width:99%; }*/
+        .wrap{width:464px;height:26px;border:0;position:relative;display: inline-block}
+        .xingzeng2 .input{position:absolute;top:0;left:0;width:457px;margin:0;padding-left:5px;height:25px;line-height:30px;font-size:12px;border:1px solid #c9cacb;}
+        #s{position:absolute;top:1px;right:0;width:32px;height:25px;text-align: center;line-height: 25px;cursor: pointer;color: #6f6f6f
+        }
+        ._citys { width: 450px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative; }
+        ._citys span { color: #ceaa78; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #ceaa78; cursor: pointer; }
+        ._citys0 { width: 95%; height: 34px; line-height: 34px; display: inline-block; border-bottom: 2px solid #ceaa78; padding: 0px 5px; font-size:14px; font-weight:bold; margin-left:6px; }
+        ._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+        ._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+        ._citys1 a { width: 83px; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 12px; border-radius: 5px; overflow: hidden; }
+        ._citys1 a:hover { color: #fff; background-color: #ceaa78; }
+        .AreaS { background-color: #ceaa78 !important; color: #fff !important; }
+    #PoPy{background-color: white !important;position: fixed!important;}
+    </style>
+    <style>
+
+        .aasd{
+            color: #1d8312;
+        }
+        .xingzengG,#citys{
+            display: none;
+        }
+
+        .addressinput p{
+            display: none;
+        }
+        #xinzeng1{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: #3a393b;
+            z-index: 10;
+            opacity: .75;
+        }
+        .red{
+            color: #a32b3f;
+        }
+
+        #adress2{
+            outline: 1px solid red;
+            display: inline-block;
+            overflow-y: scroll;
+            height: 140px;
+            /*position: absolute;*/
+        }
+
+        #adress2 li{
+            width: 106px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+
+        }
+        #adress2 li:hover{
+            background-color: #c5c5c5;
+        }
+        .letter-spacing{
+            letter-spacing: 9px;
+        }
+        .xingzeng2{
+            padding: 20px 40px 20px 40px;
+            top: 138px;
+            left: 50%;
+            position: fixed;
+            margin-left: -311px;
+            background-color: white;
+            width: 622px;
+            opacity: 1;
+            z-index: 11;
+        }
+        .xingzeng2 label{
+            font-weight: 500;
+        }
+        .xingzeng2 input{
+            border: 1px solid #c1b7ae;
+            border-top-color: #999087;
+            width: 142px;
+        }
+        #mobanS{
+            color: #8c7f76
+        }
+        #xinzeng{
+            display: inline-block;
+            padding: 0 1em;
+            font-size: 9pt;
+            line-height: 18px;
+            vertical-align: middle;
+            color: #fff;
+            background: #999087;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        #mobanS h5{
+            margin-bottom: 50px;
+        }
+        .shouhuoadress{
+            width: 690px;
+            height: 120px;
+            /*outline: red 1px solid;*/
+            margin-bottom: 30px;
+        }
+        .moren3{
+            margin-bottom: 5px;
+        }
+        .moren{
+            float: right;
+        }
+        .moren2{
+            vertical-align: top;
+        }
+        .shouhuoadress1{
+            height: 53px;
+            padding: 20px 0;
+            background: #fff;
+        }
+        .shouhuoadress2{
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 5px;
+            line-height: 20px;
+        }
+        .shouhuoadress2 p{
+            margin-bottom: 0;
+        }
+        .shouhuoadress3{
+            display: inline-block;
+            margin:12px 30px 0 0;
+            float: right;
+        }
+        .shouhuoadress3 a{
+            color: #afa59a;
+            text-decoration: underline;
+        }
+        .shouhuoadress3 a:hover{
+            color: #777069;
+        }
+        .asd{
+            color: #232323 !important;
+        }
+    </style>
+    <!--消息-->
+    <style>
+        #new,#old{
+            height: 20px;
+            display: inline-block;
+        }
+        #new{
+            color: rgb(91, 86, 82);
+            padding-bottom: 0;
+            border-bottom: 4px solid rgb(206, 170, 120);
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="gerennav" class="container">
+    <div style=" height:100%;;width: 230px;margin-left: 20%;position: relative;display: inline-block">
+        <div style="display: inline-block">
+            <div  class="nav taod" style="width: 80px;">个人中心</div>
+            <div  class="nav taod" style="width: 170px;">交易管理 <span class="span">Transaction</span></div>
+            <div id="dingdanT" class="boby taod"><a>我的订单</a></div>
+            <div id="dingdanY" class="boby taod"><a>我的优惠券</a></div>
+            <div  class="nav nav2 taod">我的收藏 <span class="span">Favorites</span></div>
+            <div id="dingdanD" class="boby taod"><a>收藏的单品</a></div>
+            <div id="dingdanP" class="boby taod"><a>收藏的平衡生活</a></div>
+            <div  class="nav nav2 taod">帐户管理<span class="span">Account</span></div>
+            <div id="dingdanH" class="boby taod"><a class="hover">帐户信息</a></div>
+            <div id="dingdanM" class="boby taod"><a >门店会员卡</a></div>
+            <div id="dingdanB" class="boby taod"><a >绑定淘宝账户</a></div>
+            <div id="dingdanA" class="boby taod"><a >安全设置</a></div>
+            <div id="dingdanS" class="boby taod"><a >收货地址</a></div>
+            <div class="nav nav2 taod">沟通与交流<span class="span">Massage</span></div>
+            <div id="dingdanX" class="boby taod"><a>消息通知</a></div>
+        </div>
+        <!--<div id="line1"></div>-->
+    </div>
+</div>
+
+<div id="dingdan" class="container" style="height: 100%;position: relative">
+    <div id="line1"></div>
+    <!--订单-->
+    <div id="mobanT" class="muban ">
+        <div id="dingdantou">
+            <span id="xianshang" class="ii">线上订单</span><span id="mendian" class="ii">门店订单</span>
+        </div>
+        <div id="qiehuan">
+            <div id="daifu">
+                <a href="">待付款(<span>2</span>)</a>
+                <a href=""> 待确认收货(<span>0</span>)</a>
+                <span id="dingdanshijian">订单时间</span>
+                <input class="laydate-icon" id="demo" placeholder="开始时间">
+                <span>到</span>
+                <input class="laydate-icon" id="demo1" placeholder="截止时间">
+            </div>
+            <div class="chaxun">
+                <span>订单查询</span><input type="text" placeholder="商品名称/订单号">
+                <span>查询</span>
+            </div>
+            <ul class="shangping list-inline">
+                <li>商品</li>
+                <li>售后</li>
+                <li>实付款</li>
+                <li>交易状态</li>
+                <li>操作</li>
+            </ul>
+        </div>
+
+        <div class="dingdanh">
+            <p class="tijiaoshijian">
+                订单号：<span class="dindanhao">9200542362</span>成交时间：<span class="dindanhao">20180621</span><span class="dindanhao">16:51:22</span>
+            </p>
+
+            <div style="margin-bottom: 25px">
+                <img class="tiaoshangpinxiangqing" src="../img/sofa1/36.jpg" alt="">
+                <div class="dingdanxiangqing">
+                    <p><a href="products%20introduction.html" class="dingdanname">Candlestick 台灯</a> <span class="dingdanname1">￥1371</span> <span class="dingdanname2">待付款</span>
+                        <a class="fukuan true">付款</a></p>
+
+                    <p> <span class="caizhixiangqing" title="色款：灯体：铜；灯罩：棉布 - 古黑色">色款：<span class="caizhixiangqing1">灯体：铜；灯罩：棉布 - 古黑色</span></span><span>（含运费 : <span>￥55</span>）</span>
+                        <a class="tiaoxiangqing xiahuaxian" href="mySure.html">订单详情</a><a  class="quxiaodingdan xiahuaxian">取消订单</a></p>
+
+                    <p>规格：<span>直径20X高61.5CM</span></p>
+                    <p><s>￥1880</s>  <span><span class="orange">￥1316</span> X 1</span></p>
+                </div>
+            </div>
+            <div class="lineX"></div>
+        </div>
+
+        <div class="dingdanh">
+            <p class="tijiaoshijian">
+                订单号：<span class="dindanhao">9200542362</span>成交时间：<span class="dindanhao">20180621</span><span class="dindanhao">16:51:22</span>
+            </p>
+
+            <div style="margin-bottom: 25px">
+                <img class="tiaoshangpinxiangqing" src="../img/sofa1/21.jpg" alt="">
+                <div class="dingdanxiangqing">
+                    <p><a href="products%20introduction.html" class="dingdanname">Candlestick 台灯</a> <span class="dingdanname1">￥1371</span> <span class="dingdanname2">待付款</span>
+                        <a class="fukuan true">付款</a></p>
+
+                    <p> <span class="caizhixiangqing" title="色款：灯体：铜；灯罩：棉布 - 古黑色">色款：<span class="caizhixiangqing1">灯体：铜；灯罩：棉布 - 古黑色</span></span><span>（含运费 : <span>￥55</span>）</span>
+                        <a class="tiaoxiangqing xiahuaxian" href="mySure.html">订单详情</a><a  class="quxiaodingdan xiahuaxian">取消订单</a></p>
+
+                    <p>规格：<span>直径20X高61.5CM</span></p>
+                    <p><s>￥1880</s>  <span><span class="orange">￥1316</span> X 1</span></p>
+                </div>
+            </div>
+            <div class="lineX"></div>
+        </div>
+
+       <div id="dangmoban"></div>
+        <div id="shifouquxiao">
+            <p style="margin-top: 10px;color: #8c7f76;font-size: 15px">确定要取消订单吗？</p>
+            <div class="tttjjj">
+                <div id="shanchudingdan" class="true olotijiao">确定</div>
+                <div id="quxiao" class="false olotijiao">取消</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--优惠券-->
+    <div id="mobanY" class="muban ">
+        <div id="youhuiquan">
+            <a>未使用 ( <span>1</span> )</a>
+            <a>已使用 ( <span>0</span> )</a>
+            <a>已过期 ( <span>0</span> )</a>
+        </div>
+        <ul class="shangpingquan list-inline">
+            <li>优惠券名称</li>
+            <li>券号</li>
+            <li>使用说明</li>
+            <li>有效期</li>
+            <li>状态</li>
+        </ul>
+
+        <style>
+            #youhuijuan{
+                background-color: #e4d53270;
+                height: 70px;
+                padding-top: 15px;
+                color: #ffaf77;
+                background-image: url("../img/sofa1/youhuiquan1.png");
+                background-size: 100% 240%;
+            }
+            .youhuiquanname{
+                font-size: 20px;
+                font-family: 方正兰亭超细黑简体;
+                color: #dd17e8;
+                font-weight: 500;
+            }
+            .shhiyong{
+                text-align: center;
+                cursor: pointer;
+                padding: 0 5px;
+                margin-left: -10px;
+            }
+        </style>
+        <div id="youhuijuan">
+            <div style="display: inline-block;">
+                <b><i class="youhuiquanname" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500元 <br>沙发代金券</i></b>
+            </div>
+            <div style="display: inline-block;vertical-align: top;margin-top: 15px;font-size: 16px;margin-left: 88px">
+                1001
+            </div>
+            <div style="display: inline-block;vertical-align: top;margin-top: 0;font-size: 14px;margin-left:63px">
+                购买沙发类的商品<br>
+                消费达到4000以上<br>
+                即可使用。
+            </div>
+            <div style="display: inline-block;vertical-align: top;margin-top: 15px;font-size: 14px;margin-left:16px">
+                2018.5.1-2018.6.30
+            </div>
+
+            <div style="display: inline-block;vertical-align: top;margin-top: 15px;font-size: 14px;margin-left:40px">
+               未使用
+                <div class="true shhiyong" >购买使用</div>
+            </div>
+        <div style="display: none">
+            <h3 class="text-center">您暂时没有该状态下的优惠券</h3>
+            <p class="tiaoxuan text-center">
+                <a href="/ccc.do" class="">马上挑选商品</a>
+            </p>
+            <div class="mt36">
+                <h3 class="text-title1">关于优惠券</h3>
+                <p>
+                    <a href="" class="mr20">优惠券使用规则</a>
+                    <a href="" class="mr20">什么是优惠券</a>
+                    <a href="" class="mr20">如何使用优惠券</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--收藏的单品-->
+    <div  id="mobanD" class="muban">
+        <!--<h3 class="text-center">您暂无收藏的单品！</h3>-->
+        <!--<p class="tiaoxuan text-center">-->
+        <!--<a href="/ccc.do" class="">马上挑选商品</a>-->
+        <!--</p>-->
+        <div id="shoucangdanping">
+            <span class="leimutou span"><span class="span">类目 </span> <span class="span">▼</span></span>
+            <ul class="ulul" id="leimu">
+                <li>全部商品</li>
+                <li class="sofa">沙发
+                    <ul class="ulul" id="leimu1">
+                        <li>功能</li>
+                        <li><span class="glyphicon glyphicon-triangle-right span"></span>Helios</li>
+                        <li>真皮沙发</li>
+                        <li>单人沙发</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="lineX"></div>
+        <div id="shanchudanping">
+            <label id="shanchu" class="shanchudanping">
+                <input type="checkbox"><span class="span">全选</span>
+            </label>
+            <span class="span shanchuT" id="shanchuT"><span class="glyphicon glyphicon-trash"></span><span>删除</span></span>
+        </div>
+        <div id="danpin">
+            <div class="dangping">
+                <img src="../img/sofa1/25.jpg" alt="">
+                <input type="checkbox">
+                <p class="">[ 1款可选 ]</p>
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+                <div class="span">￥21800.00 - ￥23800.00</div>
+            </div>
+
+            <div class="dangping">
+                <img src="../img/sofa1/25.jpg" alt="">
+                <input type="checkbox">
+                <p class="">[ 2款可选 ]</p>
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+                <div class="span">￥21800.00 - ￥23800.00</div>
+            </div>
+
+            <div class="dangping">
+                <img src="../img/sofa1/25.jpg" alt="">
+                <input type="checkbox">
+                <p class="">[ 3款可选 ]</p>
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+                <div class="span">￥21800.00 - ￥23800.00</div>
+            </div>
+
+            <div class="dangping">
+                <img src="../img/sofa1/25.jpg" alt="">
+                <input type="checkbox">
+                <p class="">[ 4款可选 ]</p>
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+                <div class="span">￥21800.00 - ￥23800.00</div>
+            </div>
+        </div>
+
+    </div>
+    <!--收藏的平衡-->
+    <div id="mobanP" class="muban">
+        <!--<h3 class="text-center">您暂无收藏的平衡生活！</h3>-->
+        <!--<p class="tiaoxuan text-center">-->
+        <!--</p>-->
+        <div id="shoucangdanping">
+            <span class="leimutou span"><span class="span">类目 </span> <span class="span">▼</span></span>
+            <ul class="ulul" id="leimu" style="width: 60px;height: 22px;padding: 0;cursor: pointer">
+                <li>平衡生活</li>
+            </ul>
+        </div>
+        <div class="lineX"></div>
+        <div id="shanchudanping">
+            <label id="shanchu" class="shanchupinghengshenghuo">
+                <input type="checkbox"><span class="span">全选</span>
+            </label>
+            <span class="span shanchuP" id="shanchuT"><span class="glyphicon glyphicon-trash"></span><span>删除</span></span>
+        </div>
+
+        <div id="pingheng">
+            <div class="dangping ">
+                <img src="../img/sofa1/32.jpg" alt="">
+                <input type="checkbox">
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+            </div>
+
+            <div class="dangping ">
+                <img src="../img/sofa1/33.jpg" alt="">
+                <input type="checkbox">
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+            </div>
+
+            <div class="dangping ">
+                <img src="../img/sofa1/34.jpg" alt="">
+                <input type="checkbox">
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+            </div>
+
+            <div class="dangping ">
+                <img src="../img/sofa1/35.jpg" alt="">
+                <input type="checkbox">
+                <span><a href="/xiangqing.do" class="span">Helios 单人沙发，Granite</a></span>
+            </div>
+        </div>
+
+
+    </div>
+    <!--账户信息muban2-->
+    <div id="mobanH" class="muban muban2">
+        <div id="dingdantou">
+            <span id="jiben">基本信息</span><span id="dengji">会员等级</span><span id="bind">会员卡绑定</span>
+        </div>
+
+        <div class="jibenxinxi">
+            <div id="zhanghao" class="">
+                <p><span>18813963439</span>，您好！</p>
+                <p class="mb10">
+                    您的会员级别:<span class="mark"><img src="../img/sofa1/huiyuan.png" alt=""><span>普卡会员</span></span>
+                    2018年06月08日                        注册成为 Tao 会员
+                </p>
+                <p class="">
+                    您的帐户消费总金额: <b>￥0.00</b>
+                </p>
+                <p class="">
+                    您的帐户积分: <b>0</b> 分
+                </p>
+                <p class="xiaofei">您再消费: <strong>￥30000</strong> 即可升级为 <span class="mark mark2"><img src="/images/yezi.png" alt=""><span>VIP-98折</span></span>
+                </p>
+            </div>
+
+            <form id="formUpdateAccountInfo" class="form-customer ">
+                <div class="form-group">
+                    <span class="label">账　号<em class="required">*</em></span><span>18813963439</span>
+                </div>
+                <div class="form-group">
+                    <label class="label one">昵　称<em class="required">*</em></label>
+                    <input type="text" name="Nickname" id="Nickname" role="nickname" class="Validform_error">
+                    <span class="Validform_checktip Validform_wrong hidden">请填写昵称</span></div>
+                <div class="form-group">
+                    <label class="label">性　别<em class="required">*</em></label>
+                    <input type="radio" value="男" name="Gender" id="male" datatype="*" nullmsg="请选择性别">
+                    <label class="mr10" for="male">男</label>
+                    <input type="radio" value="女" name="Gender" role="ridGender" id="female">
+                    <label for="female">女</label>
+                </div>
+                <div class="form-group">
+                    <label class="label">出生日期</label>
+                    <input style="width: 150px" class="laydate-icon" id="demo2" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="Email" class="label two">E-Mail</label>
+                    <input type="text" value="" name="Email" id="Email" disabled="disabled">
+                    <span class="box-bind"><a href="/Member/Email/Binding" class="link">去绑定</a></span>
+
+                </div>
+                <div class="form-group">
+                    <label for="Mobilephone" class="label">手机号码</label>
+                    <input type="text" value="18813963439" name="Mobilephone" id="Mobilephone" disabled="disabled">
+                    <span class="box-bind"><i class="icon-bindmobile"></i> 已绑定 <a class="link" href="/Member/Mobile/Change?mode=Mobile"> [ 修改绑定手机 ]</a></span>
+
+                </div>
+                <div class="form-group">
+                    <label for="Address" class="label three">联系地址</label><input type="text" role="address" name="Address" id="Address">
+                </div>
+                <div class="form-group">
+                    <label for="postcode" class="label three">邮政编码</label><input type="text" role="postcode" name="Postcode" id="Postcode" ignore="ignore" datatype="p">
+                </div>
+                <div class="pt36">
+                    <div type="button" class="btn s2 mr10 JS-btnSubmit" role="btnSubmit" id="btnSubmit">确 定</div>
+                    <div onclick="javascript:location.reload(true);" type="button" class="btn">取 消</div>
+                </div>
+                <div class="loginForm-msg" role="registerMsg"></div>
+            </form>
+
+            <div id="huiyuandengji" class="huiyuandengji hidden">
+                <h3 class="text-title">您目前享有的会员权益</h3>
+                <p>1. 您的消费可以累积积分，参加Tao积分换赠活动；</p>
+                <p>2. 凭卡可享受各类会员优惠价；</p>
+                <p>3. 凭卡预约免费软装设计服务；</p>
+                <p>4. 参加会员俱乐部举办的各类会员活动；</p>
+                <p>5. 定期免费获得Tao精美目录册；</p>
+                <p>6. 定期获得Tao各类新品、促销活动信息。</p>
+                <h3 class="text-title">会员级别介绍、申请条件与权益</h3>
+                <p class="mb30">目前Tao共设置了5个会员级别，分别为：普卡会员、VIP-98折、VIP-95折、VIP-92折、VIP-9折</p>
+
+                <div>
+
+
+                    <dl class="level-list">
+                        <dt>
+                            <span class="icon-wrap "><img src="../img/sofa1/yijihuiyuan.png" alt=""></span><span class="dandqian">当前级别</span>
+                        </dt>
+                        <dd>
+                            凡在门店或在官方网站注册填写完整“会员申请表”，即可申请成为普卡会员。会员权益:<br>
+                            1. 您的消费可以累积积分，参加Tao积分换赠活动；<br>
+                            2. 凭卡可享受各类会员优惠价；<br>
+                            3. 凭卡预约免费软装设计服务；<br>
+                            4. 参加会员俱乐部举办的各类会员活动；<br>
+                            5. 定期免费获得Tao精美目录册；<br>
+                            6. 定期获得Tao各类新品、促销活动信息
+                        </dd>
+                    </dl>
+
+                    <dl class="level-list ">
+                        <dt>
+                            <span class="icon-wrap icon-wrap1"><img src="../img/sofa1/erji.png" alt=""></span><span class="dandqian dandqian1">当前级别</span>
+                        </dt>
+                        <dd class="ddd">
+                            您实付消费累计达3万元，即可升级为Tao银卡会员。会员权益: <br>
+                            1. 享受普卡会员全部权益；<br>
+                            2. 所购正价商品9.8折优惠；<br>
+                            3. 所购商品现有促销折扣（特价商品、陈列样除外）基础上额外9.8折优惠
+                        </dd>
+                    </dl>
+
+                    <dl class="level-list">
+                        <dt>
+                            <span class="icon-wrap icon-wrap1"><img src="../img/sofa1/sanji.png" alt=""></span><span class="dandqian dandqian1">当前级别</span>
+                        <dd  class="ddd ddd2">
+                            您实付消费金额达8万元，即可升级为Tao金卡会员。会员权益: <br>
+                            1. 享受普卡会员全部权益；<br>
+                            2. 所购正价商品9.5折优惠；<br>
+                            3. 所购商品现有促销折扣（特价商品、陈列样除外）基础上9.5折优惠
+                        </dd>
+                    </dl>
+
+                    <dl class="level-list">
+                        <dt>
+                            <span class="icon-wrap icon-wrap1 icon-wrap2"><img src="../img/sofa1/siji.png" alt=""></span><span class="dandqian dandqian1">当前级别</span>
+                        <dd class="ddd ddd2">
+                            您实付消费金额达15万元，即可升级为Tao白金卡会员。会员权益:<br>
+                            1. 享受普卡会员全部权益；<br>
+                            2. 所购正价商品9.2折；<br>
+                            3. 所购商品现有促销折扣（特价商品、陈列样除外）基础上的额外9.2折优惠；<br>
+                            4. 可获得Tao免费养护服务劵一张（限门店所在城市服务范围内）；<br>
+                            5. 您生日当月将收到Tao为您准备的一份精美生日礼物
+                        </dd>
+                    </dl>
+
+                    <dl class="level-list">
+                        <dt>
+                            <span class="icon-wrap icon-wrap1 icon-wrap2 icon-wrap3"><img src="../img/sofa1/wuji.png" alt=""></span><span class="dandqian dandqian1">当前级别</span>
+                        <dd  class="ddd ddd2 ddd3">
+                            您实付消费金额达30万元，即可升级为Tao钻石卡会员。会员权益:<br>
+                            1. 享受普卡会员全部权益；<br>
+                            2. 所购正价商品9.0折；<br>
+                            3. 所购商品现有促销折扣（特价商品、陈列样除外）基础上的额外9.0折优惠；<br>
+                            4. 可获得Tao免费养护服务劵两张（限门店所在城市服务范围内）；<br>
+                            5. 您生日当月将收到Tao为您准备的一份精美生日礼物
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+
+            <div id="cardBind" class="mc-bd tabBd hidden">
+                <p class="mb30">
+                    通过门店申请成为会员的用户，及在Tao天猫店有过消费的用户，均可以通过 <a href="" class="link">绑定门店会员卡</a> 或 <a class="link" href="">绑定淘宝账号</a>，实现会员消费金额及消费积分的整合。
+                </p>
+                <h3 class="text-title">绑定门店会员卡</h3>
+                <p>1. 查看门店会员卡卡号；</p>
+                <p class="mb15">2. 点击“绑定门店会员卡”，输入卡号，验证完成后即可绑定成功。</p>
+                <p class="mb30">
+                    <img src="../img/sofa1/card.png" alt="">
+                </p>
+                <p class="text-title">绑定淘宝账号</p>
+                <p>1. 输入您的淘宝账号，系统自动识别账号是否在Tao天猫店产生过消费记录；</p>
+                <p class="mb20">
+                    2. 识别账号后，请您输入一条您在Tao天猫店购物产生的订单号（到淘宝网个人中心复制即可），以验证身份，
+                    通过验证后即可绑定成功。
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--门店会员卡-->
+    <div id="mobanM" class="muban">
+        <div class="mc-hd mb24">
+            绑定门店会员卡
+        </div>
+        <div class="crumbs mb36"><span class="cur">1.输入门店会员卡 &gt;&gt;</span><span>2.验证门店会员卡 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+        <div class="mc-bd">
+            <div class="form-customer">
+                <div id="mendianhui" class="form-group">
+                    <input type="hidden" id="permission">
+                    <input type="hidden" value="18813963439" id="mobile">
+                    <label class="label" for="cardNo">门店会员卡</label>
+                    <input type="text" value="" name="cardNo" id="cardNo" role="cardNo" maxlength="6">
+                </div>
+                <div id="mmm" class="form-group box-verifycode">
+
+                </div>
+                <div id="tijiao" class="pt36">
+                    <div id="btn" class="btnbtn btn s2 mr10 JS-btnSubmit" role="btnFirstSubmit">提 交</div>
+                    <div onclick="javascript:location.reload(true);"  class="btn">取 消</div>
+                </div>
+                <div class="loginForm-msg" role="registerMsg"></div>
+            </div>
+        </div>
+    </div>
+    <!--绑定淘宝账户-->
+    <div id="mobanB" class="muban">
+        <div class="mc-hd mb24">
+            绑定淘宝账户
+        </div>
+        <div class="crumbs mb36"><span class="cur">1.输入淘宝昵称 &gt;&gt;</span><span>2.验证淘宝账号 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+        <div class="mc-bd">
+            <div class="form-customer">
+                <div id="taobao" class="form-group">
+                    <input type="hidden" id="permission2">
+                    <input type="hidden" value="18813963439" id="mobile2">
+                    <label class="label" for="cardNo2">淘宝昵称</label>
+                    <input type="text" value="" name="cardNo2" id="cardNo2" role="cardNo" maxlength="16">
+                </div>
+                <div id="ttt" class="form-group box-verifycode">
+
+                </div>
+                <div id="tijiao2" class="pt37">
+                    <div id="btn2" class="btnbtn btn s2 mr10 JS-btnSubmit" role="btnFirstSubmit">提 交</div>
+                    <div onclick="javascript:location.reload(true);"  class="btn">取 消</div>
+                </div>
+                <div class="loginForm-msg" role="registerMsg"></div>
+            </div>
+        </div>
+    </div>
+    <!--安全设置-->
+    <div id="mobanA" class="muban">
+        <div id="anquanshezhi" class="">
+            <h5>安全设置</h5>
+            <p id="anquanjibie">安全级别：<b>中级</b><span>建议您启动全部安全设置，以保证账户安全。</span></p>
+            <div id="denglumima" class="title">
+                <img src="../img/sofa1/true.png" alt=""><span>登录密码</span>
+            </div>
+            <span class="tishian">安全性高的密码可以使账户更安全，建议您定期更换密码。<a id="xiu1">修改</a></span>
+            <p class="qiangdu">强度 <span>中</span></p>
+
+            <div class="line3"></div>
+
+            <div id="youxiang" class="title">
+                <img src="../img/sofa1/flase.png" alt=""><span>绑定邮箱</span>
+            </div>
+            <span class="tishian">验证后可用于邮箱找回密码、接收订单提醒等，保障您的帐户更加安全。<a id="xiu2">修改</a></span>
+            <p class="qiangdu">未绑定</p>
+
+            <div class="line3"></div>
+
+            <div id="shouji" class="title">
+                <img src="../img/sofa1/true.png" alt=""><span>绑定手机</span>
+            </div>
+            <span class="tishian">绑定后可用于手机找回密码、接收手机动态验证码等，保证您的帐户更加安全。<a id="xiu3">修改</a></span>
+            <p class="qiangdu">已绑定</p>
+        </div>
+
+        <div class="xiugai ">
+            <h5>修改密码</h5>
+            <p>用户登录名 &nbsp;&nbsp;&nbsp;<span>18813963439</span></p>
+            <div class="inputm">旧密码 <input class="inputtt" id="jiumima" type="text" placeholder="请输入旧密码"><span id="jinshi4" class="jinshi5"></span>
+                <div id="lishi" class="lishi">
+                    <p>使用以下项的密码：</p>
+                    <p onmouseover="changeinput()" onmouseout="changeinput2()" onclick="changeinput3()">18813963439</p>
+                </div>
+            </div>
+
+            <div id="miMa" style="margin-bottom: 20px">
+                新密码 <input maxlength="20" id="input" class="input" type="text" placeholder="请输入新密码">
+                <div id="tankuang" class="tooltip bottom" role="tooltip">
+                    <div class="tooltip-arrow" style="border-bottom-color:white;">
+                    </div>
+                    <div class="tooltip-inner">
+                        <p style="font-size: 15px;color: #5B5652;margin:0 0 5px -5px">密码要求</p>
+                        <p class="" style="color: rgba(64,60,56,0.8)"><span id="jinshi">！</span>6-20位密码</p>
+                        <p class="zhuming" style="color: rgba(64,60,56,0.8)"><span id="jinshi2">！</span>可使用数字、字母、符号的组合，不建议使用纯字母、纯数字、纯符号</p>
+                        <p style="font-size: 15px;color: #5B5652;margin:-7px 0 5px -5px">安全等级 <span class="andeng andeng1"></span><span class="andeng andeng2"></span><span class="andeng andeng3"></span></p>
+                    </div>
+                </div>
+                <span id="tishi" style="color:#a32b3f;padding-left: 5px"></span>
+            </div>
+
+            <div id="querenmima">
+                确认新密码 <input type="text" placeholder="确认密码"><span id="jinshi5" class="jinshi5"></span>
+            </div>
+            <div class="true olotijiao">确定</div>
+            <div class="false olotijiao">取消</div>
+        </div>
+
+        <div class="bangdingyouxiang ">
+            <h5>邮箱绑定</h5>
+            <div class="crumbs mb36"><span class="cur">1.验证身份 &gt;&gt;</span><span>2.验证邮箱 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+            <div class="inputm inputm2 "><label  class="label">登录密码</label> <input class="inputtt" id="youxiangumima" type="text" placeholder=""><span id="jinshi6" class="jinshi5"></span>
+                <div id="lishi2" class="lishi">
+                    <p>使用以下项的密码：</p>
+                    <p onmouseover="changeinput4()" onmouseout="changeinput5()" onclick="changeinput6()">18813963439</p>
+                </div>
+            </div>
+
+            <div id="xxx">
+
+            </div>
+            <div id="youxiangtijiao" class="btnbtn true olotijiao">提交</div>
+            <div class="false olotijiao">取消</div>
+
+        </div>
+
+        <div class="bangdingyouxiang2 ">
+            <h5>邮箱绑定</h5>
+            <div class="crumbs mb36"><span class="cur"  id="changecolor">1.验证身份 &gt;&gt;</span><span>2.验证邮箱 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+            <div class="inputm inputm2 "><label  class="label">我的邮箱</label> <input  class="inputtt" id="youxiangumima2" type="text" placeholder=""><span id="jinshi7" class="jinshi5"></span>
+                <div id="lishi3" class="lishi">
+                    <p onmouseover="changeinput7()" onmouseout="changeinput8()" onclick="changeinput9()">1260919342@qq.com</p>
+                </div>
+                <div style="position: relative;display: inline-block">
+                    <div class="huoquyouxiang">获取邮箱验证码</div>
+                    <span class="danga"></span>
+                </div>
+                <span></span>
+            </div>
+            <label style="padding-right: 8px;padding-left:6px;font-size: 12px">邮箱验证码</label><input type="text" class="inputtt">
+            <div>
+                <div id="youxiangtijiao2" class="true olotijiao">提交</div>
+                <div class="false olotijiao">取消</div>
+            </div>
+        </div>
+
+        <div class="bangdingyouxiang3 ">
+            <h5>邮箱绑定</h5>
+            <div class="crumbs mb36"><span class="cur"  id="">1.验证身份 &gt;&gt;</span><span>2.验证邮箱 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+
+            <div class="bangtrue">
+                <img src="../img/sofa1/youxiangbangding.png" alt="">
+                <a class="showdingdan"> 查看我的订单</a>
+                <a href="/ccc.do"> 继续购物</a>
+            </div>
+        </div>
+
+        <div class="xiugaibangdingshouji ">
+            <h5>修改已绑定手机</h5>
+            <div class="crumbs mb36"><span class="cur">1.验证身份 &gt;&gt;</span><span>2.修改已绑定手机 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+
+            <p class="p22">已绑定手机 <span>18813963439</span><a id="denglua">通过登录密码验证</a></p>
+
+            <div class="inputm inputm2 "><label  class="label">手机校验码</label> <input  class="inputtt" id="shoujijiaoyanma" type="text" placeholder=""><span id="jinshi8" class="jinshi5"></span>
+                <div style="position: relative;display: inline-block">
+                    <div class="huoquduanxinma huoquyouxiang">获取短信验证码</div>
+                    <span class="danga"></span>
+                </div>
+            </div>
+            <div>
+                <div id="huoquduanxinmatijiao" class="true olotijiao">提交</div>
+                <div class="false olotijiao">取消</div>
+            </div>
+        </div>
+
+        <div class="xiugaibangdingshoujit ">
+            <h5>修改已绑定手机</h5>
+            <div class="crumbs mb36"><span class="cur" >1.验证身份 &gt;&gt;</span><span>2.修改已绑定手机 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+
+            <div class="inputm"><label style="margin-left: 7px;margin-right: 8px;font-size: 12px">登录密码</label> <input class="inputtt" id="jiumima7" type="text" placeholder=""><span id="jinshi11" class="jinshi5"></span>
+                <div id="lishi5" class="lishi">
+                    <p>使用以下项的密码：</p>
+                    <p onmouseover="changeinput10()" onmouseout="changeinput11()" onclick="changeinput12()">18813963439</p>
+                </div>
+            </div>
+            <div id="sss">
+                <div id="yyy">
+                    <label for="" class="label">验证码</label>
+                    <input class="input-val" id="VerifyCode" maxlength="4" name="checkCode" role="verifyCode" placeholder="请输入验证码" value="" type="text">
+                    <canvas id="canvas" width="90" height="28"></canvas>
+                    <span id="qiehuan3">换一张</span>
+                </div>
+            </div>
+            <div>
+                <div id="shojixiugaitijiao" class="btnbtn true olotijiao">提交</div>
+                <div class="false olotijiao">取消</div>
+            </div>
+        </div>
+
+        <div class="xiugaibangdingshouji2 ">
+            <h5>修改已绑定手机</h5>
+            <div class="crumbs mb36"><span class="cur" >1.验证身份 &gt;&gt;</span><span>2.修改已绑定手机 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+
+            <div class="inputm inputm2 "><label  class="label">新的手机号</label> <input  class="inputtt" id="shoujijiaoyanma2" type="text" placeholder=""><span id="jinshi9" class="jinshi5"></span>
+                <div style="position: relative;display: inline-block">
+                    <div class="huoquduanxinma2 huoquyouxiang">获取短信验证码</div>
+                    <span class="danga"></span>
+                </div>
+            </div>
+            <label  class="label">短信验证码</label> <input  class="inputtt" id="shoujijiaoyanma3" type="text" placeholder=""><span id="jinshi10" class="jinshi5"></span>
+            <div>
+                <div id="huoquduanxinmatijiao2" class="true olotijiao">提交</div>
+                <div class="false olotijiao">取消</div>
+            </div>
+        </div>
+
+        <div class="xiugaibangdingshouji3 ">
+            <h5>修改已绑定手机</h5>
+            <div class="crumbs mb36"><span class="cur">1.验证身份 &gt;&gt;</span><span>2.修改已绑定手机 &gt;&gt;</span><span>3.绑定完成  &gt;&gt;</span></div>
+
+            <div class="bangtrue">
+                <img src="../img/sofa1/shoujixiugai.png" alt="">
+                <a class="showdingdan"> 查看我的订单</a>
+                <a href="/ccc.do"> 继续购物</a>
+            </div>
+        </div>
+    </div>
+    <!--收货地址-->
+    <div id="mobanS" class="muban">
+        <h5>收货地址</h5>
+        <p id="listaddress" style="margin-bottom: 70px">已有 <span id="num">2</span> 个地址，仅显示 15 个最新地址 <span id="xinzeng">新增</span></p>
+
+        <div class="shouhuoadress ">
+            <div class="moren3">地址 <span class="moren"><input  class="checkboxed" name="radio" type="radio"><span class="moren2">设置默认</span></span></div>
+
+            <div class="shouhuoadress1">
+                <div class="shouhuoadress2">
+                    <p>收货人: <span> aaa</span>联系方式: <span>15151616162 </span></p>
+                    <p>收货地址: <span> 吉林省/吉林市/桦甸市 31651 200000</span></p>
+                </div>
+                <div class="shouhuoadress3">
+                    <a>修改</a>
+                    <a class="remove">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shouhuoadress">
+            <div class="moren3">地址 <span class="moren"><input class="checkboxed" name="radio" type="radio">
+                <span class="moren2">设置默认</span></span></div>
+
+            <div class="shouhuoadress1">
+                <div class="shouhuoadress2">
+                    <p>收货人: <span> aaa</span><span>联系方式: </span><span>15151616162 </span></p>
+                    <p>收货地址: <span> 吉林省/吉林市/桦甸市 31651 200000</span></p>
+                </div>
+                <div class="shouhuoadress3">
+                    <a>修改</a>
+                    <a class="remove">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <!--新增-->
+
+        <div id="xinzeng1" class="xingzengG"></div>
+        <div class="xingzeng2 xingzengG">
+            <p class="closexinzeng" style="float: right;margin-right: -20px;cursor: pointer;">Close ✖</p>
+            <div  class="addressinput" style="margin-top: 30px;margin-bottom: 10px"><label>收货人 <span class="red">*</span> <input class="addressinputt" type="text"></label>
+                <p class="red tss">请填写收货人！</p>
+            </div>
+
+            <div style="line-height:26px;height: 26px;"><label style="vertical-align: top;"><span class="letter-spacing">地区</span><span class="red">*</span></label>
+            <div class="wrap"><input class="input addressinputt" name="" id="city" type="text" placeholder="请选择" autocomplete="off" readonly="true"><i id="s">▼</i></div>
+            </div>
+            <p id="citys" class="red tss">请选择省/直辖市！</p>
+
+            <div class="addressinput"  style="margin-top: 20px;margin-bottom: 10px"><label style="vertical-align: top;"><span class="letter-spacing">地址</span><span class="red">*</span>
+                <input class="addressinputt" type="text" style="width: 252px;"></label>
+                <p class="red tss">请填写详细地址！</p>
+            </div>
+
+            <div  class="addressinput" style="margin-top: 15px;margin-bottom: 10px">
+                <label style="vertical-align: top;"><span class="letter-spacing">邮编</span><span class="red">*</span>
+                <input maxlength="6" id="youma" class="addressinputt" type="text"></label>
+                <p class="red tss">请填写邮编！</p>
+                <p class="red tss">请填写正确邮编！</p>
+            </div>
+
+            <div  class="addressinput" style="margin-top: 15px;margin-bottom: 40px"><label style="vertical-align: top;"><span class="letter-spacing">手机</span><span class="red">*</span>
+                <input maxlength="11" id="shoujihaoma" class="addressinputt" type="text"> 或固话 <input type="text" style="width: 42px;"> - <input type="text"> - <input type="text" style="width: 42px;"></label>
+                <p class="red tss">请填写信息！</p>
+                <p class="red tss">请填写正确信息！</p>
+            </div>
+            <p><label>设置默认 <input  id="checked" type="checkbox" style="width: 16px;vertical-align: top"></label></p>
+
+            <div  class="" style="margin-top: -50px;text-align: center">
+                <div id="tianjiaaddress" class="true olotijiao" style="width: 100px;">提交并保存</div>
+                <div class="false olotijiao closexinzeng">取消</div>
+            </div>
+        </div>
+
+        </div>
+    <!--消息-->
+    <div id="mobanX" class="muban">
+        <div id="xiaoxi">
+            <span id="new" class="ii">新消息 (<label>0</label>)</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="old" class="ii"> 历史消息 (<label>0</label>)</span>
+        </div>
+
+    </div>
+    </div>
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap/js/bootstrap.js"></script>
+<script src="../js/laydate/laydate.js"></script>
+
+<!--日历-->
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+
+
+    !function(){
+        laydate.skin('default');//切换皮肤，请查看skins下面皮肤库
+        laydate({elem: '#demo'});//绑定元素
+        laydate({elem: '#demo1'});//绑定元素
+        laydate({elem: '#demo2'});//绑定元素
+    }();
+    //日期范围限制
+    var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(), //设定最小日期为当前日期
+        max: '2099-06-16', //最大日期
+        istime: true,
+        istoday: false,
+        choose: function(datas){
+            end.min = datas; //开始日选好后，重置结束日的最小日期
+            end.start = datas //将结束日的初始值设定为开始日
+        }
+    };
+    var end = {
+        elem: '#end',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(),
+        max: '2099-06-16',
+        istime: true,
+        istoday: false,
+        choose: function(datas){
+            start.max = datas; //结束日选好后，充值开始日的最大日期
+        }
+    };
+    laydate(start);
+    laydate(end);
+    //自定义日期格式
+    laydate({
+        elem: '#test1',
+        format: 'YYYY年MM月DD日',
+        festival: true, //显示节日
+        choose: function(datas){ //选择日期完毕的回调
+            alert('得到：'+datas);
+        }
+    });
+    //日期范围限定在昨天到明天
+    laydate({
+        elem: '#hello3',
+        min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+        max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推
+    });
+</script>
+<!--导航-->
+<script>
+
+    $("#nav").load("nav.html");
+
+
+    $("#gerennav a").addClass("hover1");
+    $(".boby").click(function (e) {
+        $("#gerennav a").removeClass("hover");
+        $(this.childNodes).addClass("hover");
+        console.log(e)
+    })
+
+    console.log($("#gerennav a")[0])
+
+    $($("#gerennav a")[0]).click(function () {
+        console.log("42");
+    })
+
+</script>
+<!--切换-->
+<script>
+    setInterval(fff,10);
+    function fff() {
+        if (parseInt($("#dingdan").css("height"))<530){
+            $("#line1").css("height","530px")
+        }else {
+            $("#line1").css("height","84%")
+        }
+    }
+    $(".boby").click(function () {
+
+        $(".muban").css({
+            display:"none"
+        });
+        console.log(this.getAttribute("id"));
+        var id=this.getAttribute("id");
+        console.log(id.charAt(7));
+        var pp=id.charAt(7);
+        if($(this).is("#dingdanM")){
+            $("#mmm").append($("#yyy"))
+        }
+        if($(this).is("#dingdanB")){
+            $("#ttt").append($("#yyy"))
+        }
+        if($(this).is("#dingdanA")){
+
+
+            $("#mobanA>div").css({
+                display:"none"
+            });
+            $("#anquanshezhi").css({
+                display:"inline-block"
+            });
+            $("#moban"+pp).css({
+                display:"inline-block"
+            })
+        }
+        $("#moban"+pp).css({
+            display:"inline-block"
+        })
+
+    })
+
+</script>
+<!--订单-->
+<script>
+
+    $(".fukuan").click(function () {
+        location.href="payment.html"
+    })
+
+    $(".quxiaodingdan").click(function () {
+
+        $("#shifouquxiao").css({
+            display:"block"
+        });
+
+        $("#dangmoban").css({
+            display:"block"
+        });
+
+
+        $(this).css({
+            color:" #8c7f15"
+        });
+        console.log($(this).css("color"))
+    });
+
+$("#shanchudingdan").click(function () {
+
+    $.each($(".quxiaodingdan"),function (i,n) {
+
+        if($(n).css("color")=="rgb(140, 127, 21)"){
+            $(n).parent().parent().parent().parent().remove()
+
+        }
+    });
+
+    $("#shifouquxiao").css({
+        display:"none"
+    });
+
+    $("#dangmoban").css({
+        display:"none"
+    });
+});
+
+    $("#quxiao").click(function () {
+        $.each($(".quxiaodingdan"),function (i,n) {
+            if($(n).css("color")=="rgb(140, 127, 21)"){
+                console.log($(n).css("color"));
+                console.log("456");
+                $(n).css({
+                    color:"#8c7f76"
+                })
+            }
+        });
+        $("#shifouquxiao").css({
+            display:"none"
+        });
+
+        $("#dangmoban").css({
+            display:"none"
+        });
+    });
+
+
+    $(".tiaoshangpinxiangqing").click(function () {
+        window.location="products introduction.html"
+    })
+
+    $(".ii").click(function () {
+
+        if($(this).is("#xianshang")){
+            $("#daifu a").show();
+            $("#dingdanshijian").css({
+                marginLeft:"20px"
+            })
+        }
+        if($(this).is("#mendian")){
+            $("#daifu a").hide();
+            $("#dingdanshijian").css({
+                marginLeft:"174px"
+            })
+        }
+        $(this).css({
+            color:"#5b5652",
+            paddingBottom: 0,
+            borderBottom: "4px solid #ceaa78"
+        });
+        console.log($(this).siblings().get(0));
+        $(this).siblings().css({
+            paddingBottom: "4px",
+            color: " #8c7f76",
+            borderBottom:"none"
+        })
+    })
+
+</script>
+<!--优惠券-->
+<script>
+    $("#youhuiquan a").click(function () {
+        $(this).css({
+            color: "#5b5652",
+            borderBottom: "4px solid #ceaa78"
+        })
+        $(this).siblings().css({
+            color: "#8c7f76",
+            borderBottom: "none"
+        })
+    })
+</script>
+<!--收藏的单品-->
+<script>
+    $("#shanchu input").change(function () {
+        if($(".shanchudanping input").get(0).checked==true){
+            $.each($("#danpin input"),function (i,n) {
+                console.log(i);
+                n.checked=true
+            })
+        }else {
+            $.each($("#danpin input"),function (i,n) {
+                console.log(i);
+                n.checked=false;
+            })
+        }
+    });
+
+    $(".shanchuT").click(function () {
+        $.each($("#danpin .dangping input"),function (i,n) {
+            if(n.checked==true){
+                $(n).parent().remove();
+            }
+        })
+    })
+</script>
+<!--收藏的平衡生活-->
+<script>
+    $(".shanchupinghengshenghuo input").change(function () {
+        if (this.checked==true){
+            $.each($("#pingheng input"),function (i,n) {
+                n.checked=true
+            })
+        }else {
+            $.each($("#pingheng input"),function (i,n) {
+                n.checked=false
+            })
+        }
+    });
+    $(".shanchuP").click(function () {
+        $.each($("#pingheng .dangping input"),function (i,n) {
+            if(n.checked==true){
+                $(n).parent().remove();
+            }
+        })
+    })
+</script>
+<!--账户信息-->
+<script>
+
+
+    $("#dingdantou span").click(function () {
+
+        if($(this).is("#jiben")){
+            $("#formUpdateAccountInfo").removeClass("hidden");
+            $("#zhanghao").removeClass("hidden");
+            $("#huiyuandengji").addClass("hidden");
+            $("#cardBind").addClass("hidden");
+        }
+        if($(this).is("#dengji")){
+            $("#formUpdateAccountInfo").addClass("hidden");
+            $("#zhanghao").removeClass("hidden");
+            $("#huiyuandengji").removeClass("hidden");
+            $("#cardBind").addClass("hidden");
+        }
+        if($(this).is("#bind")){
+            $("#formUpdateAccountInfo").addClass("hidden");
+            $("#zhanghao").addClass("hidden");
+            $("#huiyuandengji").addClass("hidden");
+            $("#cardBind").removeClass("hidden");
+        }
+        $(this).css({
+            color: "#5b5652",
+            borderBottom: "4px solid #ceaa78",
+            paddingBottom: 0
+        })
+        $(this).siblings().css({
+            color: "#8c7f76",
+            paddingBottom: "5px",
+            borderBottom: "none"
+        })
+    })
+
+    $(".dandqian").css({
+        color:"rgba(174, 0, 0, 0)"
+    })
+    $($(".dandqian")[0]).css({
+        color:"#ae0000"
+    })
+
+
+</script>
+<!--门店会员卡-->
+<script>
+    $(function(){
+        var show_num = [];
+        draw(show_num);
+
+        $("#qiehuan3").on('click',function(){
+            draw(show_num);
+            console.log(show_num.join(""))
+        })
+        $(".btnbtn").on('click',function(){
+            var val = $(".input-val").val().toLowerCase();
+            var num = show_num.join("");
+            console.log(num)
+            if(val==''){
+                alert('请输入验证码！');
+            }else if(val == num){
+
+                if($(this).is("#youxiangtijiao")){
+                    $(".bangdingyouxiang").css({
+                        display:"none"
+                    });
+                    $(".bangdingyouxiang2").css({
+                        display:"inline-block"
+                    })
+                };
+                if($(this).is("#shojixiugaitijiao")){
+                    $(".xiugaibangdingshoujit").css({
+                        display:"none"
+                    });
+                    $(".xiugaibangdingshouji2").css({
+                        display:"inline-block"
+                    })
+                };
+                alert('提交成功！');
+                $(".input-val").val('');
+                draw(show_num);
+
+            }else{
+                alert('验证码错误！请重新输入！');
+                $(".input-val").val('');
+                draw(show_num);
+            }
+        })
+    })
+
+    function draw(show_num) {
+        var canvas_width=$('#canvas').width();
+        var canvas_height=$('#canvas').height();
+        var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
+        var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
+        canvas.width = canvas_width;
+        canvas.height = canvas_height;
+        var sCode = "A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z";
+        var aCode = sCode.split(",");
+        var aLength = aCode.length;//获取到数组的长度
+
+        for (var i = 0; i <= 3; i++) {
+            var j = Math.floor(Math.random() * aLength);//获取到随机的索引值
+            var deg = Math.random() * 50 * Math.PI / 180;//产生0~30之间的随机弧度
+            var txt = aCode[j];//得到随机的一个内容
+            show_num[i] = txt.toLowerCase();
+            var x = 2 + i * 20;//文字在canvas上的x坐标
+            var y = 12 + Math.random() * 8;//文字在canvas上的y坐标
+            context.font = "bold 23px 微软雅黑";
+
+            context.translate(x, y);
+            context.rotate(deg);
+
+            context.fillStyle = randomColor();
+            context.fillText(txt, 0, 0);
+
+            context.rotate(-deg);
+            context.translate(-x, -y);
+        }
+        for (var i = 0; i <= 5; i++) { //验证码上显示线条
+            context.strokeStyle = randomColor();
+            context.beginPath();
+            context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
+            context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
+            context.stroke();
+        }
+        for (var i = 0; i <= 30; i++) { //验证码上显示小点
+            context.strokeStyle = randomColor();
+            context.beginPath();
+            var x = Math.random() * canvas_width;
+            var y = Math.random() * canvas_height;
+            context.moveTo(x, y);
+            context.lineTo(x + 1, y + 1);
+            context.stroke();
+        }
+    }
+
+    function randomColor() {//得到随机的颜色值
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return "rgb(" + r + "," + g + "," + b + ")";
+    }
+</script>
+<!--绑定淘宝账户-->
+<script>
+</script>
+<!--安全设置-->
+<script>
+
+
+    $("#xiu1").click(function () {
+        $("#anquanshezhi").css({
+            display:"none"
+        });
+        $(".xiugai").css({
+            display:"inline-block"
+        })
+    });
+
+    $("#xiu2").click(function () {
+        $("#anquanshezhi").css({
+            display:"none"
+        });
+        $("#yyy").appendTo($("#xxx"));
+        $(".bangdingyouxiang").css({
+            display:"inline-block"
+        })
+    });
+
+
+    $("#youxiangtijiao2").click(function () {
+        $(".bangdingyouxiang2").css({
+            display:"none"
+        });
+        $(".bangdingyouxiang3").css({
+            display:"inline-block"
+        })
+    });
+
+    $(".showdingdan").click(function () {
+        $(".bangdingyouxiang3").css({
+            display:"none"
+        });
+        $(".xiugaibangdingshouji3").css({
+            display:"none"
+        });
+        $("#mobanT").css({
+            display:"inline-block"
+        });
+        $("#dingdanT a").addClass("hover");
+    });
+
+    $("#xiu3").click(function () {
+        $("#anquanshezhi").css({
+            display:"none"
+        });
+        $(".xiugaibangdingshouji").css({
+            display:"inline-block"
+        })
+    });
+
+    $("#denglua").click(function () {
+        $(".xiugaibangdingshouji").css({
+            display:"none"
+        });
+        $("#yyy").appendTo($("#sss"));
+        $(".xiugaibangdingshoujit").css({
+            display:"inline-block"
+        })
+    });
+
+    $("#huoquduanxinmatijiao").click(function () {
+        $(".xiugaibangdingshouji").css({
+            display:"none"
+        });
+        $(".xiugaibangdingshouji2").css({
+            display:"inline-block"
+        })
+    });
+    $("#huoquduanxinmatijiao2").click(function () {
+        $(".xiugaibangdingshouji2").css({
+            display:"none"
+        });
+        $(".xiugaibangdingshouji3").css({
+            display:"inline-block"
+        })
+    });
+
+
+
+
+    $("#jiumima7").focusin(function () {
+        $("#lishi5").css({
+            display:"block"
+        })
+    });
+    $("#jiumima7").focusout(function () {
+
+        setTimeout(function() {
+            $("#lishi5").css({
+                display:"none"
+            })
+        },500)
+    });
+    function changeinput10() {
+        $("#jiumima7").val("18813963439")
+    }
+    function changeinput11() {
+        setTimeout(function () {
+            $("#jiumima7").val("")
+        },10)
+
+    }
+    function changeinput12() {
+        setTimeout(function () {
+            $("#jiumima7").val("18813963439")
+        },500)
+    }
+
+
+
+    $(".huoquyouxiang").click(function () {
+        $(".danga").css({
+            display:"inline-block"
+        })
+        var a=120;
+        console.log("11")
+
+        var asd=setInterval(aaa,1000);
+        function aaa() {
+
+            $(".huoquyouxiang").text(a+"秒后重新获取")
+            if(a==0){
+                $(".huoquyouxiang").text("获取短信码")
+                clearInterval(asd);
+                $(".danga").css({
+                    display:"none"
+                })
+            }
+            a--;
+        }
+    })
+
+
+
+    $("#youxiangumima2").focusin(function () {
+        $("#lishi3").css({
+            display:"block"
+        })
+    });
+    $("#youxiangumima2").focusout(function () {
+
+        setTimeout(function() {
+            $("#lishi3").css({
+                display:"none"
+            })
+        },500)
+    });
+    function changeinput7() {
+        $("#youxiangumima2").val("1260919342@qq.com")
+    }
+    function changeinput8() {
+        setTimeout(function () {
+            $("#youxiangumima2").val("")
+        },10)
+
+    }
+    function changeinput9() {
+        setTimeout(function () {
+            $("#youxiangumima2").val("1260919342@qq.com")
+        },500)
+    }
+
+    $("#youxiangumima").focusin(function () {
+        $("#lishi2").css({
+            display:"block"
+        })
+    });
+    $("#youxiangumima").focusout(function () {
+
+        setTimeout(function() {
+            $("#lishi2").css({
+                display:"none"
+            })
+        },500)
+    });
+    function changeinput4() {
+        $("#youxiangumima").val(18813963439)
+    }
+    function changeinput5() {
+        setTimeout(function () {
+            $("#youxiangumima").val("")
+        },10)
+
+    }
+    function changeinput6() {
+        setTimeout(function () {
+            $("#youxiangumima").val(18813963439)
+        },500)
+    }
+
+
+
+    $("#jiumima").focusin(function () {
+        $("#lishi").css({
+            display:"block"
+        })
+    });
+    $("#jiumima").focusout(function () {
+
+        setTimeout(function() {
+            $("#lishi").css({
+                display:"none"
+            })
+        },500)
+    });
+    function changeinput() {
+        $("#jiumima").val(18813963439)
+    }
+    function changeinput2() {
+        setTimeout(function () {
+            $("#jiumima").val("")
+        },10)
+
+    }
+    function changeinput3() {
+        setTimeout(function () {
+            $("#jiumima").val(18813963439)
+        },500)
+    }
+
+
+    //安全等级
+
+    $("#input").focusin(function () {
+        $(".tooltip").css({
+            opacity:"1",
+        })
+        setInterval(bbb,10)
+        setTimeout(eee,10)
+    })
+
+    function ddd() {
+        $(".tooltip").css({
+            display:"none"
+        })
+    }
+    function eee() {
+        $(".tooltip").css({
+            display:"block"
+        })
+    }
+    function bbb() {
+        var str2=$("#input").val();
+        if(str2.length>0&&str2.length<6){
+            $("#tishi").text("请设置密码（6-20位字符）！");
+            $("#tishi").css({
+                color:"#a32b3f",
+                fontWeight: "200"
+            })
+        }else{
+            if(str2.length<1){
+                $("#tishi").text("请输入登录密码");
+                $("#tishi").css({
+                    color:"#a32b3f",
+                    fontWeight: "200"
+                })
+            }else {
+                if(str2.length>=6){
+                    $("#tishi").text("✔");
+                    $("#tishi").css({
+                        color:"green",
+                        fontWeight: "900"
+                    })
+                }
+            }
+        }
+    }
+
+
+    $("#input").focusout(function () {
+        $(".tooltip").css({
+            opacity:"0",
+        })
+        setTimeout(ddd,300)
+    })
+
+    //    $("#queren").focusout(function () {
+    //        setInterval(ccc,10)
+    //    })
+
+
+    function ccc() {
+        var str=$("#input").val();
+        var str2=$("#queren").val();
+
+        if (str2==str){
+            $("#tishi3").text("✔");
+            $("#tishi3").css({
+                color:"green",
+                fontWeight: "900"
+            })
+        }else {
+            if (str2.length==0){
+                $("#tishi3").text("请填写信息");
+                $("#tishi3").css({
+                    color:"#a32b3f",
+                    fontWeight: "200"
+                })
+            }else {
+                $("#tishi3").text("您两次输入的密码不一致！");
+                $("#tishi3").css({
+                    color:"#a32b3f",
+                    fontWeight: "200"
+                })
+            }
+        }
+    }
+
+    setInterval(aaa,100)
+    function aaa() {
+        var str=$("#input").val();
+        var result=str.match(/\d/g);//数字
+        var result2=str.match(/\W/g);//符号
+        var result3=str.match(/[a-zA-Z]/g);//英文
+        var result4=str.match(/\w/g);//英文和数字
+//      var myResult=str.match(/\d/g);
+        if(str.length>=6){
+
+            console.log(result)
+            console.log(result2)
+
+            if(result!=null&&result3!=null){
+                console.log("21111")
+            }
+
+            $("#jinshi").text("✔");
+            $("#jinshi").css({
+                color:"green"
+            });
+            $(".andeng1").css({
+                backgroundColor: "#B3272C"
+            });
+
+            if(result!=null&&result2!=null||result2!=null&&result3!=null||result!=null&&result3!=null){
+                console.log("1111")
+                $(".andeng1").css({
+                    backgroundColor: "#E47406"
+                });
+                $(".andeng2").css({
+                    backgroundColor: "#E47406"
+                });
+            } else{
+                $(".andeng1").css({
+                    backgroundColor: "#B3272C"
+                });
+                $(".andeng2").css({
+                    backgroundColor: "#D1D1D1"
+                });
+                $(".andeng3").css({
+                    backgroundColor: "#D1D1D1"
+                });
+            }
+
+            if(result!=null&&result2!=null&&result3!=null){
+                console.log("11185285")
+                $(".andeng1").css({
+                    backgroundColor: "#71B83D"
+                });
+                $(".andeng2").css({
+                    backgroundColor: "#71B83D"
+                });
+                $(".andeng3").css({
+                    backgroundColor: "#71B83D"
+                });
+                $("#jinshi2").text("✔");
+                $("#jinshi2").css({
+                    color:"green"
+                });
+
+            }
+            else {
+                $("#jinshi2").text("！");
+                $("#jinshi2").css({
+                    color:"#bf7272"
+                });
+                if(result!=null&&result2!=null||result2!=null&&result3!=null||result!=null&&result3!=null){
+                    $(".andeng1").css({
+                        backgroundColor: "#E47406"
+                    });
+                    $(".andeng2").css({
+                        backgroundColor: "#E47406"
+                    });
+                    $(".andeng3").css({
+                        backgroundColor: "#D1D1D1"
+                    });
+
+                }else {
+                    $(".andeng1").css({
+                        backgroundColor: "#B3272C"
+                    });
+                    $(".andeng2").css({
+                        backgroundColor: "#D1D1D1"
+                    });
+                    $(".andeng3").css({
+                        backgroundColor: "#D1D1D1"
+                    });
+                }
+            }
+
+        }else {
+            $("#jinshi").text("！");
+            $("#jinshi").css({
+                color:"#bf7272"
+            });
+            $(".andeng1").css({
+                backgroundColor: "#D1D1D1"
+            });
+            $(".andeng2").css({
+                backgroundColor: "#D1D1D1"
+            });
+            $(".andeng3").css({
+                backgroundColor: "#D1D1D1"
+            });
+            $("#jinshi2").text("！");
+            $("#jinshi2").css({
+                color:"#bf7272"
+            });
+        }
+    }
+</script>
+<!--收货地址-->
+<!--插件-->
+<script type="text/javascript">
+    $("#city").click(function (e) {
+        SelCity(this,e);
+    });
+    $("#s").click(function (e) {
+        SelCity(document.getElementById("city"),e);
+    });
+</script>
+<script type="text/javascript" src="../js/address/jquery.min.js"></script>
+<script type="text/javascript" src="../js/address/Popt.js"></script>
+<script type="text/javascript" src="../js/address/city.json.js"></script>
+<script type="text/javascript" src="../js/address/citySet.js"></script>
+<!--地址js-->
+<script>
+    $("#xinzeng").click(function () {
+        $(".xingzengG").css({
+            display:"block"
+        })
+    });
+
+    $(".closexinzeng").click(function () {
+        $(".xingzengG").css({
+            display:"none"
+        });
+        $.each($('.addressinputt'),function (i,n) {
+            $(n).val("")
+        });
+        $(".asd").removeClass("asd");
+        $("#checked").get(0).checked=false;
+
+    });
+    $(".addressinputt").focusout(function () {
+
+
+        if($(this).val()==""){
+            if($(this).is("#youma")){
+                $(this).parent().next().css({
+                    display:"block"
+                });
+                $(this).parent().next().next().css({
+                    display:"none"
+                });
+            }else {
+                if($(this).is("#shoujihaoma")){
+                    $(this).parent().next().css({
+                        display:"block"
+                    });
+                    $(this).parent().next().next().css({
+                        display:"none"
+                    });
+                }else {
+                    $(this).parent().next().css({
+                        display:"block"
+                    });
+                }
+            }
+
+        }else {
+            if($(this).is("#youma")){
+                var reg2=/^[1-9][0-9]{5,}/;
+                var str=String($(this).val());
+                console.log($(this).val());
+                result=reg2.test(str);
+
+                if(result==false){
+                    $(this).parent().next().next().css({
+                        display:"block"
+                    });
+                    $(this).parent().next().css({
+                        display:"none"
+                    });
+                }else {
+                    $(this).parent().next().css({
+                        display:"none"
+                    });
+                    $(this).parent().next().next().css({
+                        display:"none"
+                    });
+                }
+            }else {
+
+                if($(this).is("#shoujihaoma")){
+                    var reg=/^[1][358][0-9]{9}$/;
+                    var str1=String($(this).val());
+
+                    var result1=reg.test(str1);
+                    if(result1==false){
+                        $(this).parent().next().next().css({
+                            display:"block"
+                        });
+                        $(this).parent().next().css({
+                            display:"none"
+                        });
+                    }else {
+                        $(this).parent().next().css({
+                            display:"none"
+                        });
+                        $(this).parent().next().next().css({
+                            display:"none"
+                        });
+                    }
+
+                }else {
+                    $(this).parent().next().css({
+                        display:"none"
+                    });
+                }
+            }
+        }
+    });
+
+    $("#tianjiaaddress").click(function () {
+        if($($(".addressinputt")[1]).val()!=""&&$($(".addressinputt")[2]).val()!=""&&$($(".addressinputt")[3]).val()!=""&&$($(".addressinputt")[4]).val()!=""&&$($(".addressinputt")[5]).val()!=""){
+            if(parseInt($(".xingzeng2 ").css("height"))==339){
+
+
+                console.log($(".asd").css("color"));
+                if($(".asd").css("color")=="rgb(35, 35, 35)"){
+                    console.log("741");
+
+                    var name=$($(".asd").parent().prev().children().get(0).firstElementChild).text($($('.addressinputt')[0]).val());
+                    var phone=$($(".asd").parent().prev().children().get(0).lastElementChild).text($($('.addressinputt')[4]).val());
+                    var address=$($(".asd").parent().prev().children().get(1).lastElementChild).text(" "+$($(".addressinputt")[1]).val()+" "+$($(".addressinputt")[2]).val()+" "+$($(".addressinputt")[3]).val());
+
+                    $(".xingzengG").css({
+                        display:"none"
+                    });
+
+                    if($("#checked").get(0).checked==true){
+                        $(".checkboxed").get().checked=false;
+                        $(".asd").parent().parent().prev().get(0).firstElementChild.firstElementChild.checked=true;
+                    }else {
+                        $(".asd").parent().parent().prev().get(0).firstElementChild.firstElementChild.checked=false;
+
+                    }
+                    setTimeout(function () {
+                        $.each($('.addressinputt'),function (i,n) {
+                            $(n).val("")
+                        });
+                        $("#checked").get(0).checked=false;
+                        $(".asd").removeClass("asd");
+                    },100);
+
+                }else {
+                    console.log("11111111");
+
+                    var aa=$("<a>",{
+                        class:"remove",
+                        text:" 删除",
+                        click:function () {
+                            $(this).parent().parent().parent().remove();
+                            $("#num").text(Number($("#num").text())-1);
+                        }
+                    }).get(0);
+
+                    var aa1=$("<a>",{
+                        class:"remove",
+                        text:" 修改",
+                        click:function () {
+                            $(".xingzengG").css({
+                                display:"block"
+                            });
+                            var name=$($(this).parent().prev().children().get(0).firstElementChild).text();
+                            var phone=$($(this).parent().prev().children().get(0).lastElementChild).text();
+                            var address=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[1];
+                            var address2=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[2];
+                            var youma=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[3];
+
+                            $($('.addressinputt')[0]).val(name);
+                            $($('.addressinputt')[1]).val(address);
+                            $($('.addressinputt')[2]).val(address2);
+                            $($('.addressinputt')[3]).val(youma);
+                            $($('.addressinputt')[4]).val(phone);
+                            $(this).addClass("asd");
+                            if($(this).parent().parent().prev().get(0).firstElementChild.firstElementChild.checked==true){
+                                console.log("789456");
+                                $("#checked").get(0).checked=true;
+                            }
+                        }
+                    }).get(0);
+
+                    var addaddress=" <div class='shouhuoadress'>"+
+                        "<div class='moren3'>地址 <span class='moren'><input  class='checkboxed' name='radio' type='radio'><span class='moren2'>设置默认</span></span></div>"+
+                        "<div class='shouhuoadress1'>"+
+                        "<div class='shouhuoadress2'>"+
+                        "<p>收货人: <span>"+$($('.addressinputt')[0]).val()+"</span>联系方式: <span>"+$($(".addressinputt")[4]).val() +"</span></p>"+
+                        "<p>收货地址: <span>"+" "+$($(".addressinputt")[1]).val()+" "+$($(".addressinputt")[2]).val()+" "+$($(".addressinputt")[3]).val()+" </span></p>"+
+                        "</div>"+
+                        "<div class='shouhuoadress3'>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>";
+                    $("#listaddress").after(addaddress);
+                    console.log(aa);
+                    $("#num").text(Number($("#num").text())+1);
+                    $(".xingzengG").css({
+                        display:"none"
+                    });
+
+                    if($("#checked").get(0).checked==true){
+                        $(".checkboxed").get().checked=false;
+                        $(".checkboxed")[0].checked=true
+                    }
+                    setTimeout(function () {
+                        document.getElementsByClassName("shouhuoadress3")[0].appendChild(aa1);
+                        document.getElementsByClassName("shouhuoadress3")[0].appendChild(aa);
+                    },50);
+                    setTimeout(function () {
+                        $.each($('.addressinputt'),function (i,n) {
+                            $(n).val("")
+                        });
+                        $("#checked").get(0).checked=false;
+                    },1000)
+                }
+
+            }
+        }
+
+    });
+
+    $(".remove").click(function () {
+        console.log($(this).parent().parent().parent().remove().get(0));
+        $(this).parent().parent().parent().remove();
+        $("#num").text(Number($("#num").text())-1);
+    });
+
+    $(".shouhuoadress3 a:first-child").click(function () {
+        $(this).addClass("asd");
+        $(".xingzengG").css({
+            display:"block"
+        });
+
+var name=$($(this).parent().prev().children().get(0).firstElementChild).text();
+var phone=$($(this).parent().prev().children().get(0).lastElementChild).text();
+var address=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[1];
+var address2=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[2];
+var youma=$($(this).parent().prev().children().get(1).lastElementChild).text().split(" ")[3];
+
+        $($('.addressinputt')[0]).val(name);
+        $($('.addressinputt')[1]).val(address);
+        $($('.addressinputt')[2]).val(address2);
+        $($('.addressinputt')[3]).val(youma);
+        $($('.addressinputt')[4]).val(phone);
+
+if($(this).parent().parent().prev().get(0).firstElementChild.firstElementChild.checked==true){
+    console.log("789456");
+    $("#checked").get(0).checked=true;
+}
+
+    });
+
+    setInterval(removelast,1000);
+    function removelast() {
+        if (parseInt($("#num").text())>13){
+            $($(".shouhuoadress")[13]).remove()
+        }
+    }
+</script>
+</body>
+</html>

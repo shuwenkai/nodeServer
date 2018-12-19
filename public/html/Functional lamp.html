@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/gn-lamp.css">
+</head>
+<body>
+
+    <div class="container process">
+        <div class="td-lamp">
+            <img src="../img/lamp/lamp-gn-1.jpg">
+            <div class="black-ban">
+                <h4>台灯</h4>
+            </div>
+        </div>
+        <div class="ld-lamp">
+            <img src="../img/lamp/lamp-gn-2.jpg">
+            <div>
+                <p>FLOOR</p>
+                <p>LAMPS</p>
+                <span>落地灯</span>
+            </div>
+
+        </div>
+        <div class="bd-lamp">
+            <img src="../img/lamp/lamp-gn-3.jpg">
+            <div>
+                <p>WALL</p>
+                <p>LAMPS</p>
+                <span>壁灯</span>
+            </div>
+
+        </div>
+        <div class="dd-lamp">
+            <img src="../img/lamp/lamp-gn-4.jpg">
+            <div class="black-ban">
+                <h4>吊灯</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav"></div>
+    <div id="footer"></div>
+    <div id="backtop"></div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#footer").load("footerStatic.html");
+        $("#backtop").load("backtop.html");
+
+        $("img").click(function () {
+            window.location="template.html"
+        });
+    </script>
+</body>
+</html>

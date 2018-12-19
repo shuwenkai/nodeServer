@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/all2.css"/>
+    <style>
+        body{
+            background-image: url("../img/images/bg.png");
+        }
+        .pp{
+            position: absolute;
+            right: 10px;
+            bottom: 200px;
+            color: white;
+        }
+        tr>td{
+            width: 200px;
+            text-align: center;
+        }
+        tr:nth-child(2){
+            height: 60px;
+        }
+        tr:nth-child(4){
+            height: 60px;
+        }
+
+        .line1{
+            height: 0;
+            border-top: 1px solid #eaeaea;
+            border-bottom:1px solid #fff;
+            width: 400px;
+        }
+        /*tr:nth-child(1){*/
+           /*background-color:  #8d7f76;*/
+        /*}*/  table{
+
+        }
+        section{
+            position: relative;
+            height: 700px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/all2.css"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section>
+    <div  class="color">
+        <h1>关于我们 &nbsp;About Us</h1>
+        <a href="index_footer_about-tao.html">关于Tao</a>
+        <br/>
+        <a href="index_footer_contact.html">联系我们</a>
+        <p>&nbsp;</p>
+        <a href="index_footer_News.html">品牌新闻 &nbsp;News</a>
+        <p>&nbsp;</p>
+        <h1>产品目录册&nbsp;Catalog</h1>
+        <a href="index_footer_Online-catalog.html">在线目录册</a>
+        <br/>
+        <a href="index_footer_Application-directory.html">申请目录册</a>
+        <p>&nbsp;</p>
+        <h1>软装设计&nbsp;Desigm Service</h1>
+        <a href="index_footer_Soft-outfit-design.html">软装设计服务</a>
+        <br/>
+        <a href="index_footer_Soft-outfit-design.html">申请软装设计</a>
+        <p>&nbsp;</p>
+        <a href="index_footer_careers.html">招聘信息&nbsp; Careers</a>
+        <br/>
+        <a href="index_footer_stores.html">全国门店&nbsp;Stores</a>
+        <br/>
+        <a href="index_footer_call-center.html">客服中心&nbsp;Call Center</a>
+    </div>
+
+
+    <div class="allW">
+        <img src="../img/img/careers.jpg" alt=""/>
+        <div class="pp">
+            <p style="font-size: 18px">Careers</p>
+            <p>招聘信息</p>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    职位名称
+                </td>
+                <td>职能部门</td>
+                <td>工作地点</td>
+                <td>开始时间</td>
+            </tr>
+
+            <tr>
+                <td>出纳</td>
+                <td>财务部</td>
+                <td>杭州</td>
+                <td>2016-6-3</td>
+            </tr>
+            <tr>
+                <td colspan="4"  class="line1"></td>
+            </tr>
+            <tr>
+                <td>设计顾问</td>
+                <td>无锡第六空间店</td>
+                <td>无锡</td>
+                <td>2016-5-4</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="line1"></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+</script>
+</body>
+</html>

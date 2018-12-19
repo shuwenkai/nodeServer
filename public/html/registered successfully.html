@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--如果用户使用IE浏览器打开页面，使用IE的最高版本或者IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--initial-scale=1:设置初始化缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../js/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respjs1d.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respjs1d.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="../css/nav.css" rel="stylesheet">
+    <style>
+        ::selection{
+            background-color: #F4F4F4;
+        }
+        body{
+            background-image: url("../img/images/bg.png");
+            /*background-color: rgba(244, 244, 244, 0.82);*/
+        }
+        .container{
+            padding:30px 80px 80px 80px;
+        }
+        .row{
+            background-color: white;
+            width: 100%;
+            height: 516px;
+            margin-left:0;
+            padding-top: 80px;
+            text-align: center;
+            color: #868271;
+        }
+        .row p{
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 18px;
+            margin-bottom: 70px;
+            width: 145px;
+            color: #4f4f4f;
+        }
+        #zhanghao{
+            color:#b3272c;
+            margin-bottom: 50px;
+        }
+        #dengLu{
+            width: 154px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            background-color: #cbaf7f;
+            color: #ffffff;
+            margin-bottom: 90px;
+            transition: all .1s linear;
+            font-weight: lighter;
+            margin-top: 60px;
+
+        }
+        #dengLu:hover{
+            cursor: pointer;
+            background-color: #ba9f74;
+            color: #dfdfdf;
+        }
+        img{
+            cursor: pointer;
+        }
+        #bangka,#wanshan,#zhangan{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h3 class="center-block">恭喜您注册成功！</h3>
+
+        <p>尊敬的用户您好，您的登录名为: <span id="zhanghao">18813963439</span></p>
+        <p>您的 Tao 购物之旅即将开始>></p>
+        <div class="center-block" id="dengLu"><b>去 购 物</b></div>
+
+        <span><img src="../img/images/egren.png" alt=""><span id="wanshan">完善个人资料></span></span>
+        <span style="margin-left:130px"><img src="../img/images/安全.png" alt=""><span id="zhangan">提升账户安全></span></span>px
+        <span style="margin-left:130px"><img src="../img/images/bang.png" alt=""><span id="bangka">绑定门店会员卡></span></span>
+    </div>
+
+</div>
+
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap/js/bootstrap.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+
+    $("#dengLu").click(function () {
+        window.location="index.html";
+    });
+    $("#wanshan").click(function () {
+        window.location="personal center.html";
+    });
+    $("#zhangan").click(function () {
+        window.location="personal center.html";
+    });
+    $("#bangka").click(function () {
+        window.location="personal center.html";
+    })
+</script>
+</body>
+</html>

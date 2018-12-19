@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red;*/
+}
+body{
+    background-image: url("/img/index/lifebg.png");
+}
+#life_container{
+    width: 100%;
+    height: auto;
+    /*outline: red 3px solid;*/
+}
+#life_sec{
+    width: 1000px;
+    margin: 150px auto 0;
+    /*height: 800px;*/
+    position: relative;
+    /*outline: green 3px solid;*/
+}
+#life_catalogue{
+    width: 90px;
+    height: 178px;
+    position: absolute;
+}
+#life_catalogueul>li{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.selection_a{
+    color: rgba(57, 57, 57, 0.87);
+    transition: all 0.1s linear;
+    text-decoration: none;
+}
+#life_catalogueul>li>a:hover{
+    color: rgba(209, 170, 120, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+#selection_a{
+    color: rgba(209, 170, 120, 1); !important;
+}
+#life_content{
+    width: 780px;
+    position: relative;
+    left: 220px;
+}
+#life_content div{
+    width: 780px;
+    height: 400px;
+
+}
+#life_content a{
+    display: block;
+}
+#life_content img{
+    width: 780px;
+    height: 340px;
+}
+#life_content p{
+    width: 780px;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 20px;
+}

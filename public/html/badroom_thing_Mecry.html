@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #footercontainer{
+            margin-top: 500px !important;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="../css/badroom_thing.css"/>
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<body>
+<header class="container-fluid" style="margin-top: 140px">
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-11">
+            <img style="margin-left: 55px" src="../img/Mercy.jpg" class="pic_size_bg img-responsive" alt=""/>
+        </div>
+        <!--<div class="col-xs-1"></div>-->
+    </div>
+
+
+    <div class="row">
+        <div class="space"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 hb_location">
+            <ul style="float: right">
+                <li><img src="../img/hb.png" alt=""/></li>
+                <li>合并同款</li>
+                <li><div class="g3k"></div></li>
+                <li>共2款</li>
+            </ul>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <hr/>
+
+
+
+    <div class="row">
+        <!--<div class="col-xs-1"></div>-->
+        <div class="col-xs-12">
+            <ul class="div_size introduce_ul" style="left: 170px;">
+                <li><img src="../img/5004502.jpg" class="pic_size_sm" alt=""/><br/>
+                    <a class="introduce">Mercy 全棉印花四件套床上用品</a><br/>￥2190</li>
+                <!--</div>-->
+                <!--<div class=" div_size">-->
+                <li><img src="../img/5004502.jpg" class="pic_size_sm" alt=""/><br/>
+                    <a class="introduce">Mercy 全棉印花四件套床上用品</a><br/>￥2390</li>
+                <!--</div>-->
+                <!--<div class=" div_size">-->
+                <li><img src="../img/5004700.jpg" class="pic_size_sm" alt=""/><br/>
+                    <a class="introduce">Mercy 全棉印花四件套床上用品</a><br/>￥2590</li>
+            </ul>
+        </div>
+        <!--<div class="col-xs-2"></div>-->
+    </div>
+</header>
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/balanceLifeStatic.js"></script>
+
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+    $(".introduce_ul img").click(function () {
+        window.location="products introduction.html"
+    })
+</script>
+</body>
+</html>

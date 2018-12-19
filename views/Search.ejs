@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Search.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<% include nav.ejs%>
+<section class="text-center" style="background-image:url('../public/img/Sale/lifebg.png');">
+    <div style="height: 200px">
+
+    </div>
+    <div class="filter-count fr text-right" style="display: none">
+        搜索 “<strong class="search_value"></strong>” &nbsp;&nbsp;&nbsp;&nbsp; 共<span class="searchNum"></span>款
+    </div>
+    <div class="line" style="border-top:4px solid #eaeaea;"></div>
+    <div class="g-wrap of-hx pb100">
+        <div style="text-align: left;width: 100%">
+            <div  class="search_result container">
+
+            </div>
+            <div class="p-serachBox" style="margin-left: 35%">
+                <input type="text"  autocomplete="off" placeholder="请输入名称、货号等" maxlength="60" name="searchValue">
+                <button class="JS_doSearch" onclick="Search_all()" type="button">搜索</button>
+                <div class="sugBox hide"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<% include footer.ejs%>
+<script src="/js/nav.js"></script>
+<script src="/js/jquery-3.3.1.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!--<script src="../js/jquery-3.3.1.js"></script>-->
+<script>
+    function Search_all() {
+        // console.log($("input[name='searchValue']").val());
+        $(".search_value").html($("input[name='searchValue']").val());
+        $(".filter-count").css({display:'inline-block'});
+
+        // var cc=$("input[name='searchValue']").val();
+        $.ajax({
+            async:false,
+            url:"/searchAll.do",
+            type:"post",
+            data:{
+                searchValue:$("input[name='searchValue']").val()
+            },
+            success:function (data) {
+                console.log(data);
+                if(data.length>0) {
+                    $(".search_result").html("");
+                    $(".searchNum").html(data.length);
+                    for (var i = 0; i < data.length; i++) {
+                        $(".search_result").html($(".search_result").html() +
+                            "<ul class='search_result_child col-lg-4 col-ms-4'><li>"+"<img src='"+data[i].path+"'></li>"+
+                            "<li><a href='/Sale.do'>" + data[i].d_name + "</a></li>"+
+                            "<li><span style='color: rgba(255,143,14,0.58)'>￥ "+data[i].d_price+"</span></li>"+
+                            "</ul>");
+                    }
+                    $(".search_result_child").css({
+                        float:"left",
+                        width:"30%"
+                    })
+                }else{
+                    $(".searchNum").html(data.length);
+                    $(".search_result").html("<dl style='margin-left: 30%'><dt>很抱歉，没有找到与'<span  class='search_value'></span>'相关的搜索结果</dt>"+
+                    "<dd>1. 请检查输入文字是否有误</dd>"+
+                    "<dd>2. 使用更一般的关键词,如“餐桌”</dd>"+
+                    "<dd>3. 知道商品编码？可以直接输入商品编码</dd>"+
+                    "<dd>4. 如果您需要额外的帮助找到您需要的,请致电客服: 400-888-9469</dd><dl>")
+                }
+                $(".search_value").html($("input[name='searchValue']").val());
+            }
+        })
+    }
+</script>
+</body>
+</html>

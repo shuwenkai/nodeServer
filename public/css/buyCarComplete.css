@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/bg_main.jpg");
+    font-family: "Microsoft YaHei UI";
+}
+
+
+
+/*当前状态*/
+.process{
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+.titleNow{
+    color: #999087;
+    font-size: 12px;
+    margin-left: 12px;
+}
+.red{
+    color: red;
+}
+
+/*完成信息*/
+#information{
+    margin-top: 30px;
+    height: 200px;
+    background: #efffe3;
+    overflow: hidden;
+    border: rgba(128, 128, 128, 0.29) solid 1px;
+}
+#information h3 span{
+    color: red;
+}
+#information h3{
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+#information p{
+    color: #999087;
+    margin-left: 150px;
+    font-size: 20px;
+}
+#information p span{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*温馨提示*/
+#TIPS{
+    border-bottom: rgba(0, 0, 0, 0.51) 1px solid;
+    margin-top: 50px;
+}
+#TIPS p{
+    color: #8c7f76;
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+#TIPS span{
+    color: red;
+    font-weight: bold;
+}
+
+/*返回按钮*/
+.olotijiao{
+    margin-top: 20px;
+    height: 28px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s linear;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+.true{
+    background: #ceaa78;
+    border: none;
+    color: white;
+}
+.true:hover{
+    background-color: #ba9a6d;
+}
+
+
+.false{
+    background: white;
+    color: #9a9a9a;
+    border: 1px solid #e4e0dc;
+    margin-right: 10px;
+}
+.false:hover{
+    color: #616161;
+    border:1px solid #a7a4a1;
+}

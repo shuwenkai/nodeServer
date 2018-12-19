@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<%-include("nav")%>
+<div id="container">
+    <a name="gotop"><div class="section">
+<!--=================================第一个轮播=========================================-->
+        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-pause="null">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/index/sy-01.png" id="sy-01">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/index/sy-02.png" id="sy-02">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></a>
+    <!--=====================room轮播==========================-->
+    <div class="section" id="room">
+        <div id="roomword">
+            <span class="roomword" onmouseover="roomword(this)" onmouseleave="roomleave(this)">客厅</span>/
+            <span class="roomword" onmouseover="roomword(this)" onmouseleave="roomleave(this)">卧室</span>/
+            <span class="roomword" onmouseover="roomword(this)" onmouseleave="roomleave(this)">餐厅</span>/
+            <span class="roomword" onmouseover="roomword(this)" onmouseleave="roomleave(this)">书房</span>
+        </div>
+    </div>
+    <!--========================furniture轮播=======================-->
+    <div class="section" id="furniture">
+        <div id="furnitureword">
+            <span class="furnitureword" onmouseover="furnitureword(this)" onmouseleave="furnitureleave(this)">沙发</span>/
+            <span class="furnitureword" onmouseover="furnitureword(this)" onmouseleave="furnitureleave(this)">床</span>/
+            <span class="furnitureword" onmouseover="furnitureword(this)" onmouseleave="furnitureleave(this)">餐桌</span>/
+            <span class="furnitureword" onmouseover="furnitureword(this)" onmouseleave="furnitureleave(this)">书桌</span>
+        </div>
+    </div>
+    <!--=============================lamp轮播===============================-->
+    <div class="section" id="room">
+        <div id="carousel-example-generic4" class="carousel slide carousel-fade" data-pause="null" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<div class="carousel-indicators">-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="0" class="active">客厅/</span>-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="1">卧室/</span>-->
+            <!--<span>餐厅/</span>-->
+            <!--<span>书房/</span>-->
+            <!--</div>-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic4" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/img/index/indexlamp-1.jpg" >
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexlamp-2.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexlamp-3.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexlamp-4.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========================spin轮播==============================-->
+    <div class="section" id="room">
+        <div id="carousel-example-generic5" class="carousel slide carousel-fade" data-pause="null" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<div class="carousel-indicators">-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="0" class="active">客厅/</span>-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="1">卧室/</span>-->
+            <!--<span>餐厅/</span>-->
+            <!--<span>书房/</span>-->
+            <!--</div>-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic5" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/img/index/indexSpin-1.jpg" >
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexSpin-2.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexSpin-3.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexSpin-4.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======================ornaments轮播======================-->
+    <div class="section" id="room">
+        <div id="carousel-example-generic6" class="carousel slide carousel-fade" data-pause="null" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<div class="carousel-indicators">-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="0" class="active">客厅/</span>-->
+            <!--<span data-target="#carousel-example-generic2" data-slide-to="1">卧室/</span>-->
+            <!--<span>餐厅/</span>-->
+            <!--<span>书房/</span>-->
+            <!--</div>-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic6" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic6" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic6" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic6" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/img/index/indexOrnaments-1.jpg" >
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexOrnaments-2.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexOrnaments-3.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/index/indexOrnaments-4.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================杂志新品栏=========================-->
+    <div class="section">
+        <div id="magazine">
+            <div>
+                <a><img src="/img/index/index-Magazine.jpg" id="img_mag"></a>
+                <p>
+                    ONLINEMAGZINE<br>
+                    在线杂志
+                </p>
+            </div>
+            <div id="img_new">
+                <img src="/img/index/index-new.jpg" >
+                <br>
+                <P>
+                    NEW ARRIVALS<br>
+                    新品
+                </P>
+            </div>
+        </div>
+    </div>
+    <!--===============================页脚===========================-->
+    <div class="section" id="index_footer">
+        <div id="index_ul">
+            <ul>
+                <li class="special">新手上路</li>
+                <li><a>成为会员</a></li>
+                <li><a>购物流程</a></li>
+                <li><a>找回密码</a></li>
+                <li><a>订单查询</a></li>
+                <li><a>在线目录</a></li>
+            </ul>
+            <ul>
+                <li class="special">帮助中心</li>
+                <li><a>支付方式</a></li>
+                <li><a>配送说明</a></li>
+                <li><a>售后服务</a></li>
+                <li><a>常见问题</a></li>
+                <li><a>家具保养</a></li>
+            </ul>
+            <ul>
+                <li class="special">客户服务</li>
+                <li><a>会员介绍</a></li>
+                <li><a>全国门店</a></li>
+                <li><a>软装设计</a></li>
+                <li><a>会员活动</a></li>
+                <li><a>客诉受理</a></li>
+            </ul>
+            <ul>
+                <li class="special">关于我们</li>
+                <li><a>关于Tao</a></li>
+                <li><a>媒体视角</a></li>
+                <li><a>招聘信息</a></li>
+                <li><a>品牌动态</a></li>
+                <li><a>联系方式</a></li>
+            </ul>
+        </div>
+        <div id="index_footerlogo">
+            <div>
+                <img src="/img/index/forterlogo.png">
+            </div>
+            <p>Simplicity-Serenity-Balance</p>
+        </div>
+        <div id="index_share">
+            <a href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.taolivingconcept.com%2fproduct-list-multiple-119800%2f1----Descending" title="分享到微博" ><i class="iconfont" id="iconfont">&#xe66b</i></a>
+            <a href="http://www.ijinshan.com/sem/xintop/f13.shtml?sfrom=166&keyID=22691" title="分享到微信"><i class="iconfont">&#xe654</i></a>
+            <a href="http://t.qq.com/" title="分享到腾讯微博" target="_blank"><i class="iconfont">&#xe60e</i></a>
+        </div>
+        <div id="index_erweima">
+            <img src="img/index/qrcode-weixin.jpg">
+            <img src="img/index/qrcode-weibo.jpg">
+        </div>
+        <div id="index_black">
+            <div id="index_copyright">© 杭州安易贸易有限公司版权所有    浙ICP备 13023512号</div>
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div id="divwrap">
+    <a href="http://localhost:8888/index.do" style="text-decoration: none"><div id="backtopdiv" title="回到顶部" onclick="backtop()">
+        <i class="iconfont iconfontb">&#xe61e</i>
+    </div>
+    </a>
+    <div id="servediv" title="联系客服">
+        <i class="iconfont iconfontb">&#xe616</i>
+    </div>
+</div>
+
+
+
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/switchPage.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

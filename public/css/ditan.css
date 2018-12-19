@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    margin-top: 70px;
+}
+.row-div{
+    margin-top: 100px;
+}
+.banner{
+    padding: 50px 98px;
+    position: relative;
+}
+.banner div{
+    height: 50px;
+    /*background-color: red;*/
+    text-align: center;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 50px;
+    top:492px;
+    z-index: 99;
+    background-color: #271C18;
+    opacity: 0.6;
+    padding: 0;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/cz-lamp.css">
+</head>
+<body>
+
+    <div class="container process">
+        <div class="sj-lamp">
+        <img src="../img/lamp/lamp-cz-1.jpg">
+        <div class="black-ban">
+            <h4>水晶灯</h4>
+        </div>
+    </div>
+        <div class="three-lamp">
+            <div class="col-lg-4 col-md-4 col-xs-4 cl-lamp">
+                <img src="../img/lamp/lamp-cz-2.jpg">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 cl-lamp">
+                <img src="../img/lamp/lamp-cz-3.jpg">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 cl-lamp">
+                <img src="../img/lamp/lamp-cz-4.jpg">
+            </div>
+        </div>
+        <div class="more-lamp">
+            <img src="../img/lamp/lamp-cz-5.jpg">
+            <div class="black-ban">
+                <h4>更多材质</h4>
+            </div>
+        </div>
+
+
+</div>
+
+    <div id="nav"></div>
+    <div id="footer"></div>
+    <div id="backtop"></div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#footer").load("footerStatic.html");
+        $("#backtop").load("backtop.html");
+
+        $("img").click(function () {
+            window.location="template.html"
+        });
+    </script>
+</body>
+</html>

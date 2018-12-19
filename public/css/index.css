@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: red solid 2px;*/
+}
+body{
+    background-image: url("/img/index/bg_index.jpg");
+    margin: 0 auto;
+    text-align: center;
+}
+/*==============switchPage配置================*/
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+#container{
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+#container,.section{
+    height: 100%;
+    position: relative;
+}
+/*=================淡入淡出配置=================*/
+.carousel-fade .carousel-inner .item{ opacity:0; -webkit-transition-property:opacity;-moz-transition-property:opacity ; -ms-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;}
+
+.carousel-fade .carousel-inner .active{ opacity: 1;}
+.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left: 0;opacity: 0;}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {opacity: 1;}
+/*===============================================*/
+#sy-01{
+     height: 733px;
+ }
+#sy-02{
+    height: 733px;
+}
+/*===========第二个轮播============*/
+#room,#furniture{
+    width: 88%;
+    margin: 0 auto;
+}
+#roomword,#furnitureword{
+    position: absolute;
+    left: 110px;
+    top: 650px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
+    z-index: 5;
+}
+#roomword span,#furnitureword span{
+    cursor: pointer;
+}
+#roomword span:first-child,#furnitureword span:first-child{
+    color: rgba(255, 255, 255, 1);
+}
+/*====================杂志==================*/
+#magazine{
+    padding-top: 8%;
+    margin-top: 5%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 40px;
+}
+
+#img_new{
+    margin-left: 60px;
+}
+#magazine div{
+    display: inline-block;
+}
+/*===============================footer=============================*/
+#index_ul{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+#index_ul ul{
+    display: inline-block;
+    margin-right: 150px;
+    line-height: 30px;
+}
+#index_ul ul:first-child{
+    margin-left: 120px;
+}
+#index_ul>ul>li>a{
+    color: #8C8273;
+    cursor: pointer;
+    text-decoration: none;
+}
+.special{
+    color: rgba(255, 255, 255, 0.91);
+}
+#index_footer{
+    background-color: #212121;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:26px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #9B9187;
+}
+#index_footerlogo{
+    margin-top: 90px;
+}
+#index_footerlogo p{
+    color: #8C8273;
+    margin-top: 20px;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icons/font_1l3oxuo7rnvzpvi/iconfont.eot');
+    src: url('../icons/font_1l3oxuo7rnvzpvi/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../icons/font_1l3oxuo7rnvzpvi/iconfont.woff') format('woff'),
+    url('../icons/font_1l3oxuo7rnvzpvi/iconfont.ttf') format('truetype'),
+    url('../icons/font_1l3oxuo7rnvzpvi/iconfont.svg#iconfont') format('svg');
+}
+#index_share{
+    margin-top: 15px;
+}
+#index_share a{
+    text-decoration: none;
+}
+#index_share i{
+    font-size: 32px;
+    margin-right: 12px;
+}
+#index_share i:first-child{
+    margin-left: 12px;
+}
+#index_erweima{
+    margin-top: 30px;
+}
+#index_erweima img{
+    width: 85px;
+    height: 85px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#index_black{
+    margin-top: 28px;
+}
+#index_copyright{
+    font-size: 12px;
+    color: #8C8273;
+}
+/*=================room furniture轮播重做================*/
+#room{
+    background-image: url("/img/index/index-room1.jpg");
+    transition: all 0.5s linear;
+}
+#furniture{
+    background-image: url("/img/index/indexfurniture-1.jpg");
+    transition: all 0.5s linear;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('/icons/font_h5zfisezxquayvi/iconfont.eot');
+    src: url('/icons/font_h5zfisezxquayvi/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('/icons/font_h5zfisezxquayvi/iconfont.woff') format('woff'),
+    url('/icons/font_h5zfisezxquayvi/iconfont.ttf') format('truetype'),
+    url('/icons/font_h5zfisezxquayvi/iconfont.svg#iconfont') format('svg');
+}
+.iconfontb{
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+#backtopdiv,#servediv{
+    width: 40px;
+    height: 40px;
+    background-color: #999087;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+}
+#servediv{
+    margin-top:3px;
+}
+#divwrap{
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+}

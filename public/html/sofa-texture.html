@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--如果用户使用IE浏览器打开页面，使用IE的最高版本或者IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--initial-scale=1:设置初始化缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../js/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respjs1d.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+        body{
+            background-image: url("../img/images/bg.png");
+        }
+        ::selection{
+            background-color: inherit;
+        }
+        #caizhi{
+            padding-top: 120px;
+        }
+        .caizhi1{
+            position: relative;
+            margin-bottom: 10%;
+            cursor: pointer;
+        }
+        .caizhi1:after{
+            content: "真皮沙发";
+            display: block;
+            background-color: rgba(57, 45, 39, 0.81);
+            height: 50px;
+            color: #CEC3BA;
+            text-align: center;
+            font-size: 18px;
+            line-height: 50px;
+            margin-top: -50px;
+            width: 100%;
+            position: absolute;
+        }
+        #caizhi2:after{
+            content: "布艺沙发";
+        }
+    </style>
+    <link  rel="import" href="nav.html">
+</head>
+<body>
+
+<div id="caizhi" class="container">
+    <div id="caizhi1" class="caizhi1">
+        <img class="img-responsive" src="../img/images/26.jpg" alt="">
+    </div>
+    <div id="caizhi2" class="caizhi1">
+        <img class="img-responsive" src="../img/images/27.jpg" alt="">
+    </div>
+</div>
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap/js/bootstrap.js"></script>
+<script>
+//$("button").click(function () {
+//    var i=2;
+//
+//    window.location="retrieve password"+ i+".html"
+//});
+
+$("#nav").load("nav.html");
+$("#footer").load("footerStatic.html");
+$("#backtop").load("backtop.html");
+
+$("img").click(function () {
+    window.location="template.html"
+});
+
+//var link=document.querySelector('link[rel="import"]');
+//var content=link.import;
+//var el=content.querySelector('nav');
+//console.log(el);
+//document.body.appendChild(el.cloneNode(true));
+
+</script>
+</body>
+</html>

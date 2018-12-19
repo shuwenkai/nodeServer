@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sale</title>
+    <!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/navStatic.css" rel="stylesheet">
+    <link href="../css/footerStatic.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            background-image: url("../img/images/bg.png");
+        }
+        ::selection{
+            background-color: inherit;
+        }
+    </style>
+</head>
+<body>
+<section style="padding-top:90px">
+    <div class="g-wrap pt70" style="margin-bottom: 80px;">
+        <div class="banner shadow text-center">
+            <img style="display: block;margin:10px auto;" src="../img/Sale/sale-banner1.jpg" alt="Monthly offer"/>
+            <a href="salechlid.html" target="_blank" style="display: block;margin:5px 0;">
+                <img src="../img/Sale/sale-banner2.jpg" alt="Monthly offer"/>
+            </a>
+        </div>
+    </div>
+</section>
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/fangzhicss.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+
+<header>
+    <div class="kongwei0"></div>
+    <div class="kongwei1"></div>
+
+    <!--jc单图1-->
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 jc_dantu_1_div juzhong_div">
+            <img src="../img/textile/basis_textile.jpg" class="jc_dantu_1" alt="...">
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+</header>
+<section style="height: 650px;">
+    <div class="kongwei1"></div>
+
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 jc_3xiaotu">
+            <img src="../img/textile/basis_textile2.jpg" class="jc_3t_daxiao" alt=""/>
+            <img src="../img/textile/basis_textile3.jpg" class="jc_3t_daxiao" alt=""/>
+            <img src="../img/textile/basis_textile4.jpg" class="jc_3t_daxiao" alt=""/>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+</section>
+
+<div id="nav"></div>
+<div id="footer"></div>
+<div id="backtop"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+    $("#backtop").load("backtop.html");
+
+    $(".jc_3xiaotu img").click(function () {
+        window.location="products introduction.html"
+    })
+</script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

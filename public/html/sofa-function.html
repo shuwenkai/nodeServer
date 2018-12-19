@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--如果用户使用IE浏览器打开页面，使用IE的最高版本或者IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--initial-scale=1:设置初始化缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../js/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respjs1d.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="../css/backtop.css" rel="stylesheet">
+    <style>
+
+        body{
+            background-image: url("../img/images/bg.png");
+        }
+        ::selection{
+            background-color: inherit;
+        }
+        #caizhi{
+            padding: 120px 50px 0 50px;
+        }
+        .caizhi1{
+            position: relative;
+            margin-bottom: 10%;
+            cursor: pointer;
+        }
+        .caizhi1:after{
+            content: "三人沙发";
+            display: block;
+            background-color: rgba(57, 45, 39, 0.81);
+            height: 50px;
+            color: #CEC3BA;
+            text-align: center;
+            font-size: 18px;
+            line-height: 50px;
+            margin-top: -50px;
+            width: 100%;
+            position: absolute;
+        }
+        #caizhi2:after{
+            content: "单人沙发";
+        }
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+            padding-left: 3px !important;
+            padding-right: 3px !important;
+        }
+        #shu{
+            margin-bottom: 5%;
+            margin-left: 5%;
+        }
+        #kong{
+            opacity: 0;
+        }
+        #shuang:after{
+            content: "双人沙发";
+            width: 98.1%;
+        }
+        #ge:after{
+            content: "搁脚凳";
+            width: 83% !important;
+        }
+        @media screen and (max-width: 1200px){
+            #shuang:after{
+                content: "双人沙发";
+                width: 97.9%
+            }
+            #ge:after{
+                content: "搁脚凳";
+                width: 82.6%;
+            }
+        }
+        @media screen and (max-width: 992px){
+            #shuang:after{
+                content: "双人沙发";
+                width: 97.5%
+            }
+            #ge:after{
+                content: "搁脚凳";
+                width: 82%;
+            }
+        }
+        @media screen and (max-width: 768px){
+            #kong{
+                display: none;
+            }
+            #shuang:after{
+                content: "双人沙发";
+                width: 98.5%
+            }
+            #ge:after{
+                content: "搁脚凳";
+                width: 98.65%;
+            }
+
+            #shu{
+                width: 100%;
+                margin-bottom: 5%;
+                margin-left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="caizhi" class="container">
+    <div id="caizhi1" class="caizhi1">
+        <img class="img-responsive" src="../img/images/28.jpg" alt="">
+    </div>
+
+    <div id="shu" class="row">
+        <div id="shuang" class="caizhi1 col-sm-4 col-sm-offset-1 col-xs-12"><img id="shuangren" class="img-responsive" src="../img/images/29.jpg" alt=""></div>
+        <div id="ge" class="caizhi1 col-sm-6 col-xs-12"><img id="gejiao" class="img-responsive" src="../img/images/30.jpg" alt=""></div>
+        <div id="kong" class=" col-sm-1 col-xs-0"><img id="kong1" class="img-responsive" src="../img/images/30.jpg" alt=""></div>
+    </div>
+
+    <div id="caizhi2" class="caizhi1">
+        <img class="img-responsive" src="../img/images/31.jpg" alt="">
+    </div>
+</div>
+<div id="divwrap">
+    <div id="backtopdiv" title="回到顶部" onclick="backtop()">
+        <a><i class="iconfontback">&#xe61e</i></a>
+    </div>
+    <div id="servediv" title="联系客服">
+        <i class="iconfontback">&#xe616</i>
+    </div>
+</div>
+<div id="nav"></div>
+<div id="footer"></div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap/js/bootstrap.js"></script>
+<script>
+    setInterval(function () {
+        console.log($(window).width());
+var shuangren=$("#shuangren").css("height");
+        console.log(shuangren);
+$("#gejiao").css({
+    height:shuangren
+})
+    },100);
+
+    $("img").click(function () {
+        window.location="template.html"
+    });
+
+    $("#nav").load("nav.html");
+    $("#footer").load("footerStatic.html");
+</script>
+<script src="../js/backtop.js"></script>
+</body>
+</html>

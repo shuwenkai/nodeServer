@@ -1,0 +1,264 @@
+/*定制*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    margin-top: 70px;
+}
+.container{
+    width: 100%;
+    padding: 0;
+}
+.bg-color{
+    width: 100%;
+    height: 30px;
+    /*background-color: #705954;*/
+    text-align: center;
+    position: relative;
+}
+.submenu{
+    background-color: #705954;
+    color: #fff;
+    left: 0;
+    right: 0;
+    top: 190px;
+    padding: 0 41%;
+    text-align: center;
+    margin: 0;
+}
+.submenu .li-menu{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+.li-menu2{
+    position: absolute;
+    right: 40px;
+    top:5px;
+    text-align: center;
+}
+.li-menu2 P{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+@media (max-width: 1100px) and (min-width: 100px) {
+    .submenu{
+        padding: 0 38%;
+    }
+}
+/*字体图标*/
+.glyphicon{
+    width: 30px;
+    height: 80px;
+    line-height: 80px;
+    top: 50%;
+    font-size: 20px;
+    background-color: rgba(47, 47, 47, 0.22);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+}
+.carousel-control:hover .glyphicon {
+    opacity: 1;
+    visibility: visible;
+}
+.active-logo img{
+    transition: all .5s linear;
+}
+.active-logo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .5s linear;
+    z-index: -1;
+}
+.active-logo{
+    width: 250px;
+    height: 105px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: auto;
+    padding-right: auto;
+}
+@media all {
+    .logofar{
+        padding-left: 40%;
+    }
+}
+/*图片*/
+.linian-div {
+    margin-left: auto;
+    margin-top: 0;
+    text-align: center;
+    height: 250px;
+}
+.div1{
+    height: 250px;
+    color: white;
+    position: relative;
+    padding-left:15px ;
+    padding-right:15px ;
+}
+/*@media (max-width: 1125px) and (min-width: 100px) {*/
+/*.linian-div{*/
+/*height: 200px;*/
+/*}*/
+/*}*/
+.row h1{
+    text-align: center;
+}
+.bg2{
+    margin-top: 40px;
+    color: #444444;
+}
+.select{
+    padding: 48px;
+    background-color: #ECECEC;
+    text-align: center !important;
+    width: 100%;
+}
+.nav-tabs{
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    padding: 0  50px;
+    float: left;
+}
+.nav-tabs li{
+    margin: 20px 10px;
+}
+.nav-tabs li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-tabs li p{
+    margin: 0;
+    height: 40px;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-tabs li a:hover{
+    cursor: pointer;
+    color: #55a532;
+}
+.nav-tabs li p:hover{
+    cursor: pointer;
+    color: #55a532;
+}
+
+.nav-ul li{
+    margin: 28px 32px;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav-ul img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .3s linear;
+}
+.news-part{
+    height: 500px;
+    padding: 20px 121.5px;
+}
+.part-div:first-child{
+    width: 320px;
+    height: 467px;
+}
+dl{
+    margin: 50px 0 0 0;
+}
+.part-div:nth-child(2){
+    margin-left: 70px;
+    border-top: 1px solid black;
+}
+.part-div:nth-child(3){
+    border-top: 1px solid black;
+}
+
+.part-div{
+    width: 300px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+dt{
+    width:25%;
+    margin: 0 20px;
+    font-size: 18px;
+    color: #333137;
+    line-height: 30px;
+    float: left;
+}
+dd{
+    width: 60%;
+    box-sizing: border-box;
+    line-height: 26px;
+    font-size: 12px;
+    float: right;
+}
+.imga{
+    margin-top: 450px;
+}
+
+.part-img{
+    width: 320px;
+    height: 467px;
+    transition: all .5s linear;
+}
+.part-img:hover{
+    transform: scale(1.1);
+    transition: all .5s linear;
+}
+@media (max-width: 1340px)and (min-width: 700px) {
+    .nav-tabs {
+        width: 520px;
+        padding: 0 10px;
+    }
+    .part-div:nth-child(2){
+        margin-left: 0 !important;
+    }
+    .part-div{
+        width: 28% !important;
+    }
+    .part-div:nth-child(3){
+        width: 28% !important;
+    }
+    dd{
+        width: 110px !important ;
+    }
+    dt{
+        margin: 0;
+    }
+    .news-part{
+        margin: 0  !important;
+        padding: 0 80px;
+    }
+}
+.right-box{
+    margin-top: 25px;
+    position: relative;
+}
+.right-box ul:nth-child(2){
+    width: 96%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear;
+    background-color: white;
+}
+.right-box ul:nth-child(1){
+    transition: all .3s linear;
+    background-color: white;
+}
